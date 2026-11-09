@@ -1,6 +1,6 @@
 # c1zz-ki für Gambio – Bilderrundgang
 
-**0.8.2-rc.1 · Modulstand 0.8.2**
+**0.8.3-rc.1 · Modulstand 0.8.3**
 
 Fünf Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
 
@@ -30,6 +30,6 @@ Die optionale Shopübersicht hilft auch bei einem leeren Blog. Vorhandene Blogar
 
 ## 5. Gespeicherte Ideen weiterverwenden
 
-Vorhandene Vorschläge werden ohne erneuten KI-Aufruf geöffnet. Eine Artikelidee lässt sich als Thema in die Entwurfserstellung übernehmen. Neue Anfragen sind getrennt aufklappbar.
+Die Auswahl im Dropdown lädt den gespeicherten Vorschlagssatz direkt und ohne erneuten KI-Aufruf. Titel, Kategorie und Kurzbeschreibung stehen in kompakten Zeilen; die Gliederung lässt sich aufklappen. Eine Artikelidee lässt sich als Thema in die Entwurfserstellung übernehmen. Neue Anfragen sind getrennt aufklappbar.
 
 [![Gespeicherter Vorschlagsverlauf mit Übernahme in einen Entwurf](images/gespeicherte-ideen.png)](images/gespeicherte-ideen.png)
