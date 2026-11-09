@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-09",
+  "gambio": "26.11.0",
+  "php": "8.2.31",
+  "database": "MariaDB 10.10",
+  "theme": "Malibu",
+  "fresh_workflow_checks": 48,
+  "fresh_browser_checks": 17,
+  "fresh_environment_cleaned": true,
+  "main_update_browser_checks": 6,
+  "main_content_and_credentials_preserved": true,
+  "expected_main_changes": [
+    "installed_package_version: 0.42.0 -> 0.43.0",
+    "blog version_info.php",
+    "blog package-manifest.json"
+  ],
+  "verified_installed_files": 180,
+  "php_syntax_files": 100,
+  "provider_error_fixture_checks": 119,
+  "real_provider_calls_during_release_tests": 0,
+  "module": "c1zz-ki für Gambio",
+  "version": "0.8.2",
+  "installer_sha256": "f66e8bcf84df97c964acf99a95aa87e162aa16347e9ff71af4df5f30bdebc95e"
+}

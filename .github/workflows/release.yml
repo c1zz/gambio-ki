@@ -1,0 +1,81 @@
+name: Verify and publish release candidate
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*-rc.*']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify installer and every embedded file without executing PHP
+        run: python3 tools/verify_release.py
+      - name: Check PHP syntax
+        run: php -l c1zz-ai-install-0.8.2.php
+      - name: Verify release metadata matches tag
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          assert json.load(open('release.json'))['tag'] == os.environ['RELEASE_TAG']
+          PY
+
+  publish:
+    needs: verify
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify exact committed installer
+        run: python3 tools/verify_release.py
+      - name: Attest complete installer from this release workflow
+        if: github.event.repository.private == false
+        id: attest
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: c1zz-ai-install-0.8.2.php
+      - name: Publish pre-release with checksum and provenance bundle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          ATTESTATION_BUNDLE: ${{ steps.attest.outputs.bundle-path }}
+        run: |
+          assets=(c1zz-ai-install-0.8.2.php SHA256SUMS LICENSE)
+          release_title=$(python3 -c 'import json; r=json.load(open("release.json")); print(r["name"] + " · " + r["tag"].removeprefix("v"))')
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            # Documentation corrections must never replace published installer bytes.
+            existing=$(mktemp -d)
+            trap 'rm -rf -- "$existing"' EXIT
+            for asset in "${assets[@]}"; do
+              gh release download "$RELEASE_TAG" --pattern "$asset" --dir "$existing"
+              cmp -- "$asset" "$existing/$asset"
+            done
+            gh release edit "$RELEASE_TAG" --title "$release_title" --notes-file RELEASE_NOTES.md
+            exit 0
+          fi
+          if [ -n "$ATTESTATION_BUNDLE" ]; then
+            cp -- "$ATTESTATION_BUNDLE" c1zz-ai-install-0.8.2.php.sigstore.json
+            assets+=(c1zz-ai-install-0.8.2.php.sigstore.json)
+          fi
+          gh release create "$RELEASE_TAG" \
+            --verify-tag --prerelease \
+            --title "$release_title" \
+            --notes-file RELEASE_NOTES.md \
+            "${assets[@]}"

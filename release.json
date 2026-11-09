@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "name": "c1zz-ki für Gambio",
+  "module_version": "0.8.2",
+  "tag": "v0.8.2-rc.1",
+  "status": "release-candidate",
+  "installer": "c1zz-ai-install-0.8.2.php",
+  "sha256": "f66e8bcf84df97c964acf99a95aa87e162aa16347e9ff71af4df5f30bdebc95e",
+  "bytes": 105943,
+  "package_files": 30,
+  "requires_blog": "0.42.0",
+  "gambio_tested": "26.11.0",
+  "repository": "c1zz/gambio-ki",
+  "provenance": "unavailable-private-repository"
+}
