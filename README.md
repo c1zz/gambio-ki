@@ -1,10 +1,10 @@
 # c1zz-ki für Gambio
 
-**Testrelease 0.8.3-rc.1 · Modulstand 0.8.3 · separat installierbare Erweiterung**
+**Testrelease 0.9.0-rc.1 · Modulstand 0.9.0 · separat installierbare Erweiterung**
 
 Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambio**. Das KI-Modul verwaltet deine Anbieterzugänge und die aktivierten Bereiche. Der Assistent öffnet sich beim Artikel unter der vorhandenen Blognavigation und nutzt den gesamten Inhaltsbereich.
 
-[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.8.3-rc.1/c1zz-ai-install-0.8.3.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
+[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.9.0-rc.1/c1zz-ai-install-0.9.0.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
@@ -32,7 +32,17 @@ Blog und KI-Modul verwenden denselben c1zz-systems-Stil. Der Assistent gruppiert
 
 Du brauchst einen eigenen API-Schlüssel. OpenAI und Anthropic werden über das jeweilige API-Konto abgerechnet. Gemini kann im Google Free Tier innerhalb des verfügbaren Kontingents kostenlos genutzt werden; bei aktivierter Google-Abrechnung können Kosten entstehen. Das Modul kann den Tarif nicht erkennen oder kostenlose Nutzung erzwingen. Maßgeblich sind die Bedingungen deines Anbieterprojekts.
 
-OpenAI und Anthropic bieten außerdem ein größeres Modell mit ausdrücklicher Bestätigung. Kein automatischer Modellwechsel und keine automatischen Wiederholungen bei Fehlern. Bilderzeugung, Webrecherche und Anmeldung über ein Chat-Abonnement sind in diesem Testrelease nicht enthalten.
+OpenAI und Anthropic bieten außerdem ein größeres Modell mit ausdrücklicher Bestätigung. Kein automatischer Modellwechsel und keine automatischen Wiederholungen bei Fehlern. Bilder lassen sich über die nachfolgend beschriebene Browserhilfe erstellen. Eine Bild-API, automatische Browseranmeldung im Modul und Webrecherche sind nicht enthalten.
+
+## Blogbilder mit ChatGPT oder Gemini
+
+Unter **Artikel → Neuer Artikel (oder Bearbeiten) → Titelbild → Bild beim Anbieter erstellen** bereitest du eine Bildbeschreibung vor. Titel, Kurzbeschreibung und Kategorie werden aus dem aktuellen Formular übernommen, auch vor dem Speichern. Wähle einen Bildstil und ergänze bei Bedarf weitere Artikelauszüge.
+
+**Beschreibung kopieren & Anbieter öffnen** kopiert deinen Text und öffnet die Webseite. Dort mit dem Browserkonto anmelden, den Text einfügen, das Bild erstellen und herunterladen. Anschließend über den vorhandenen Blog-Bildupload hinzufügen.
+
+Angeboten werden eingerichtete, erfolgreich geprüfte OpenAI-/Gemini-Zugänge bei aktiviertem Blogbereich. Die Bildhilfe ruft keine kostenpflichtige API auf; Tarif und Limits des Browserkontos gelten unabhängig vom API-Schlüssel. Kein automatisches Einfügen, kein Bildimport und keine Anbieteranmeldung im Shop. Die Bildbeschreibung wird nicht dauerhaft gespeichert. Wenn Kopieren oder Popups blockiert sind, stehen manuelles Kopieren und ein Anbieterlink bereit.
+
+![Bearbeitbare Bildbeschreibung und Anbieterwahl direkt beim Titelbild](docs/images/blogbild-browser.png)
 
 ## In Gambio eingebunden
 
@@ -42,14 +52,14 @@ API-Schlüssel werden verschlüsselt gespeichert und später nicht wieder im For
 
 ## Installation und Entfernung
 
-Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.42.0](https://github.com/c1zz/gambio-blog)**; für den gemeinsamen Stil wird **0.43.0** empfohlen. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
+Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.42.0](https://github.com/c1zz/gambio-blog)**; für den gemeinsamen Stil wird **0.44.0** empfohlen. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
 
 1. PHP-Installer und Prüfsumme zusammen herunterladen und prüfen.
-2. Nur `c1zz-ai-install-0.8.3.php` in den Shopordner hochladen und im Browser öffnen.
+2. Nur `c1zz-ai-install-0.9.0.php` in den Shopordner hochladen und im Browser öffnen.
 3. Nativ als Admin anmelden und die Installation ausdrücklich starten. Der Installer entfernt sich nach erfolgreichem Abschluss.
 4. Im KI-Modul einen Anbieter verbinden, testen und den Bereich Blog aktivieren.
-5. Im Blog bei **Neuer Artikel → KI-Assistent** beginnen.
+5. Im Blog bei **Artikel → Neuer Artikel → KI-Assistent** beginnen.
 
 Bei der normalen Deinstallation werden Zugänge und aktive Einbindungen entfernt. Blogartikel, Medien und gespeicherte Themenvorschläge bleiben erhalten. Eine Wiederinstallation benötigt neue Anbieterzugänge. Details und Sicherungshinweise stehen in der [Installationsanleitung](docs/INSTALLATION.md).
 
-Die fünf [Abbildungen](docs/BILDERRUNDGANG.md) zeigen die echte Oberfläche im lokalen Testshop mit beispielhaften redaktionellen Texten. Sie zeigen keine API-Schlüssel und dokumentieren keine zusätzlichen Anbieteraufrufe.
+Die sechs [Abbildungen](docs/BILDERRUNDGANG.md) zeigen die echte Oberfläche im lokalen Testshop mit beispielhaften redaktionellen Texten. Sie zeigen keine API-Schlüssel und dokumentieren keine zusätzlichen Anbieteraufrufe.

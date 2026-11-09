@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
-  "module_version": "0.8.3",
-  "blog_version": "0.43.0",
+  "blog_version": "0.44.0",
+  "ai_version": "0.9.0",
   "environment": {
     "gambio": "26.11.0",
     "php": "8.2.31",
@@ -10,8 +10,8 @@
   },
   "fresh": {
     "success": true,
-    "version": "0.8.3",
-    "blog_version": "0.43.0",
+    "version": "0.9.0",
+    "blog_version": "0.44.0",
     "gambio": "26.11.0",
     "checks": [
       "original GX26 archive checksum",
@@ -69,10 +69,10 @@
   },
   "freshBrowser": {
     "success": true,
-    "version": "0.8.3",
+    "version": "0.9.0",
     "checks": [
-      "0.8.3 wizard completes and root installer is absent",
-      "native Module Center shows version 0.8.3",
+      "0.9.0 wizard completes and root installer is absent",
+      "native Module Center shows version 0.9.0",
       "native action rejects invalid CSRF with HTTP 403",
       "invalid native CSRF leaves module installed",
       "native uninstall returns success JSON without redirect",
@@ -94,6 +94,8 @@
   "mainUpdate": {
     "success": true,
     "checks": [
+      "five native blog update steps completed",
+      "blog root installer removed",
       "AI native update completed and installer removed",
       "final blog version displayed",
       "existing verified provider statuses retained",
@@ -104,34 +106,74 @@
   "preservation": {
     "success": true,
     "tables": 17,
-    "protectedFiles": 161,
-    "manifestFiles": 180,
+    "protectedFiles": 11,
+    "manifestFiles": 182,
+    "changedMetaKeys": [
+      "installed_package_version"
+    ],
     "providerRequests": 0
   },
   "syntax": {
     "success": true,
-    "phpFiles": 19
+    "phpFiles": 100
   },
-  "suggestionUi": {
+  "javascript": {
+    "success": true,
+    "files": 17
+  },
+  "imageHandoff": {
     "success": true,
     "checks": [
-      "manual history button is hidden when automatic selection is active",
-      "multiple saved suggestion sets available for selection check",
-      "dropdown change loads selected saved suggestions automatically",
-      "dropdown change loads selected saved suggestions automatically",
-      "all saved article ideas remain visible",
-      "all saved category suggestions remain visible",
-      "outlines are initially collapsed",
-      "outline opens using its summary",
-      "complete saved outline is preserved",
-      "taking a topic opens the draft pane",
-      "topic transfer retains title and full outline without generating a draft",
-      "ideas fit 900px with normal page scrolling",
-      "ideas fit 600px with normal page scrolling",
-      "reload preserves the saved suggestions"
+      "image helper initially collapsed",
+      "only configured image providers offered",
+      "image helper opens accessibly",
+      "unsaved title and teaser included locally",
+      "article markup remains inert text",
+      "opening helper sends no context anywhere",
+      "style change preserves edited context",
+      "closing and reopening preserves edited prompt",
+      "fixed openai destination without context or credentials in URL",
+      "new tab isolated from editor for openai",
+      "copies exact edited prompt for openai",
+      "blocked popup has visible manual link for openai",
+      "fixed gemini destination without context or credentials in URL",
+      "new tab isolated from editor for gemini",
+      "copies exact edited prompt for gemini",
+      "blocked popup has visible manual link for gemini",
+      "denied clipboard selects text for manual copy",
+      "missing clipboard API keeps manual copying available",
+      "article fields and upload selection untouched",
+      "existing image upload remains available",
+      "empty prompt opens no provider",
+      "image helper fits available width at 1440px",
+      "image helper fits available width at 900px",
+      "inactive or unsupported providers offer no browser handoff",
+      "inactive or unsupported providers offer no browser handoff"
     ],
     "providerRequests": 0,
-    "desktopResultsHeight": 632.21875
+    "persistedChanges": 0
   },
-  "providerRequests": 0
+  "articleUi": {
+    "success": true,
+    "checks": [
+      "only optional example articles in release screenshot",
+      "one combined article navigation item",
+      "article list marked active",
+      "green create button with plus above search on the left",
+      "plus icon is decorative for assistive technology",
+      "article status labels present",
+      "create action remains above search at 1440px",
+      "create action remains above search at 900px",
+      "new article opens empty editor with Articles active",
+      "existing article editor retains active Articles",
+      "trash remains separate without create action"
+    ],
+    "persistedChanges": 0
+  },
+  "builderChecks": 2,
+  "manualConfirmation": {
+    "browserImageGeneration": "User confirmed working on 2026-11-09; provider not specified"
+  },
+  "providerRequests": 0,
+  "module_version": "0.9.0"
 }

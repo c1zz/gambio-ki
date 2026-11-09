@@ -8,9 +8,9 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 ## Paket prüfen und installieren
 
-`SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 30 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
+`SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.8.3.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.9.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
 Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Updates erfolgen durch Hochladen des neuen Installers.
 
@@ -26,7 +26,7 @@ Im KI-Modul Schlüssel speichern und **Verbindung testen** wählen. Speichern al
 
 Für ausschließlich kostenlose Gemini-Tests ein geeignetes Google-Free-Tier-Projekt ohne aktivierte Abrechnung verwenden. Das Modul erkennt den Projekttarif nicht. Kosten, Kontingente und Verfügbarkeit beim Anbieter prüfen.
 
-Unter **Aktive Bereiche** den Blog aktivieren. Redaktionelle Funktionen liegen im Blog bei **Neuer Artikel → KI-Assistent**. API-Zugang und Chat-Abonnement sind getrennte Angebote.
+Unter **Aktive Bereiche** den Blog aktivieren. Redaktionelle Funktionen liegen im Blog bei **Artikel → Neuer Artikel → KI-Assistent**. API-Zugang und Chat-Abonnement sind getrennte Angebote.
 
 ## Vorschläge und Entwürfe
 
@@ -39,3 +39,9 @@ Vorschläge bleiben je Admin gespeichert. Eine Idee kann als Entwurfsthema über
 Die Deinstallation ist über GX26s Modulverwaltung oder den eigenen Modulstatus erreichbar. Sie deaktiviert die Integration, entfernt Anbieterzugänge, technische Auftragsdaten und die eigene Schlüsseldatei. Blogartikel und Medien bleiben erhalten. Der persönliche Vorschlagsverlauf bleibt für eine Wiederinstallation gespeichert; er wird nicht automatisch gelöscht.
 
 Der eigene Modulcode bleibt vorhanden. Wiederinstallation über den Modulstatus; danach neue API-Schlüssel hinterlegen. GX26 zeigt in seiner gewöhnlichen Modulliste nur installierte Module. Es gibt in diesem Teststand keine separate Löschfunktion für den gesamten Vorschlagsverlauf.
+
+## Bilder über das Browserkonto
+
+Im Artikeleditor bei **Titelbild → Bild beim Anbieter erstellen** Beschreibung und Bildstil prüfen. Sie übernehmen Titel, Kurzbeschreibung und Kategorie aus dem aktuellen Formular; weitere Auszüge kannst du selbst ergänzen. Mit „Beschreibung kopieren & Anbieter öffnen“ ChatGPT oder Gemini öffnen. Dort selbst anmelden, Text einfügen, Bild erzeugen und herunterladen. Danach den vorhandenen Bildupload verwenden.
+
+Die Anbieterwahl benötigt einen erfolgreich geprüften OpenAI-/Gemini-Zugang und den aktivierten Blogbereich. Der Browser nutzt seine eigene Anmeldung, seinen Tarif und seine Limits. Das Modul löst keine Bild-API-Anfrage aus und übernimmt keine Bilder automatisch. Die Beschreibung bleibt beim Auf-/Zuklappen erhalten, wird aber nicht gespeichert. Gesperrte Zwischenablage: Text manuell kopieren; gesperrtes Popup: Anbieterlink verwenden. Bei Deaktivierung/Deinstallation entfällt auch die Bildhilfe; es gibt dafür keine zusätzlichen gespeicherten Zugangsdaten.

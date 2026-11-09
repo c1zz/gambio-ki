@@ -1,8 +1,8 @@
 # c1zz-ki für Gambio – Bilderrundgang
 
-**0.8.3-rc.1 · Modulstand 0.8.3**
+**0.9.0-rc.1 · Modulstand 0.9.0**
 
-Fünf Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
+Sechs Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
 
 ## 1. Bereiche und Anbieter verwalten
 
@@ -33,3 +33,9 @@ Die optionale Shopübersicht hilft auch bei einem leeren Blog. Vorhandene Blogar
 Die Auswahl im Dropdown lädt den gespeicherten Vorschlagssatz direkt und ohne erneuten KI-Aufruf. Titel, Kategorie und Kurzbeschreibung stehen in kompakten Zeilen; die Gliederung lässt sich aufklappen. Eine Artikelidee lässt sich als Thema in die Entwurfserstellung übernehmen. Neue Anfragen sind getrennt aufklappbar.
 
 [![Gespeicherter Vorschlagsverlauf mit Übernahme in einen Entwurf](images/gespeicherte-ideen.png)](images/gespeicherte-ideen.png)
+
+## 6. Ein Blogbild im Browser erstellen
+
+Die Bildhilfe liegt direkt beim Titelbild des Artikels. Beschreibung aus dem Artikel prüfen, Bildstil und Anbieter wählen, Text kopieren und auf der Anbieter-Webseite einfügen. Das fertige Bild wird anschließend über den vorhandenen Blogupload hinzugefügt. Die Abbildung zeigt eine lokal vorbereitete Beschreibung; kein Bild wurde für die Aufnahme generiert.
+
+[![Bildbeschreibung mit Stilwahl, ChatGPT/Gemini und Kopierfunktion](images/blogbild-browser.png)](images/blogbild-browser.png)

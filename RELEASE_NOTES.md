@@ -1,13 +1,14 @@
-# c1zz-ki für Gambio · 0.8.3-rc.1
+# c1zz-ki für Gambio · 0.9.0-rc.1
 
-Gespeicherte Themenvorschläge sind jetzt als kompakte redaktionelle Liste aufgebaut. Der Wechsel im Dropdown lädt den gewählten Vorschlagssatz direkt, ohne zusätzlichen Button und ohne neuen KI-Aufruf.
+Blogbilder mit dem Browserkonto erstellen: Im Artikeleditor öffnet „Bild beim Anbieter erstellen“ eine bearbeitbare Bildbeschreibung aus Titel, Kurzbeschreibung und Kategorie.
 
-- Titel, Kategorie und Kurzbeschreibung sofort sichtbar; vollständige Gliederung aufklappbar.
-- „Als Thema übernehmen“ überträgt Titel und Gliederung in die Entwurfserstellung.
-- Kategorievorschläge als kurze Zeilen; schmale Ansichten verwenden weiterhin die normale Seitenscrollung.
-- Ohne JavaScript bleibt der manuelle Öffnen-Button verfügbar.
-- Gespeicherte Vorschläge, Blogartikel und Anbieterzugänge bleiben beim Update erhalten.
+- ChatGPT und Google Gemini werden bei erfolgreich geprüftem API-Zugang und aktiviertem Blogbereich angeboten.
+- Illustration, Foto oder minimalistische Grafik wählen; Beschreibung und weitere Artikelauszüge selbst ergänzen.
+- „Beschreibung kopieren & Anbieter öffnen“ öffnet die Anbieter-Webseite in einem getrennten Tab. Dort anmelden, Text einfügen, Bild erstellen und herunterladen; anschließend den bestehenden Blog-Bildupload nutzen.
+- Keine Bild-API-Anfrage aus dem Modul. Browserkonto, Tarif und Limits gelten separat; API-Schlüssel melden nicht im Browser an.
+- Bei blockierter Zwischenablage manuell kopieren, bei blockiertem Popup den Anbieterlink verwenden. Artikel und Medien bleiben unverändert; kein automatischer Import.
+- Entwürfe, Vorschlagsverlauf und Anbieterzugänge bleiben beim Update erhalten.
 
-Interner Modulstand und Installer: **0.8.3**. Voraussetzung: aktives c1zz-blog ab 0.42.0; für den gemeinsamen Stil wird 0.43.0 empfohlen. Nur `c1zz-ai-install-0.8.3.php` hochladen. Das Blogmodul benötigt für diese Änderung kein Update.
+Die Bilderstellung über diesen Browserweg wurde vom Nutzer bestätigt. Automatisierte Prüfungen simulieren Kopieren und Tabs; sie erzeugen keine Bilder beim Anbieter.
 
-Prüfungen und tatsächliche Grenzen: [Teststand](docs/TESTSTAND.md). Die Releaseprüfung löst keine echten KI-Anfragen aus. Anbieterfunktionen bleiben unverändert; Anthropic wurde weiterhin nur mit simulierten Antworten geprüft.
+Modulstand und Installer: **0.9.0**. Voraussetzung: aktives c1zz-blog ab 0.42.0; gemeinsam geprüft mit **0.44.0**. Nur `c1zz-ai-install-0.9.0.php` hochladen und ohne vorherige Deinstallation aktualisieren. [Installation](docs/INSTALLATION.md) · [Teststand](docs/TESTSTAND.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).

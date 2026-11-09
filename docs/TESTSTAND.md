@@ -1,30 +1,30 @@
 # Teststand und Grenzen
 
-Stand: 9. November 2026. Modulversion **0.8.3**, Blog **0.43.0**. Geprüfte Kombination: **Gambio GX26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**.
+**KI 0.9.0-rc.1 / Blog 0.44.0-rc.1**
+
+Geprüfte Kombination: **Gambio GX26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**. Stand: 9. November 2026.
 
 ## Aktuelle Releaseprüfung
 
-- **47 Ablaufprüfungen und 17 Chromium-Prüfungen im frischen GX26-Shop:** exakte Installer, leere Neuinstallation, native Modulverwaltung, De-/Wiederinstallation mit Datenerhalt, Entfernung der Root-Installer und der KI-Zugänge bei Deinstallation. Nur künstliche Zugangsdaten; die temporäre Umgebung ist vollständig entfernt.
-- **4 Browserprüfungen beim Update des Hauptshops:** KI-Installer 0.8.3 abgeschlossen und entfernt, Blogversionsanzeige unverändert, vorhandene geprüfte Anbieterzugänge und native Modulversionen korrekt.
-- **14 gezielte Chromium-Prüfungen am installierten 0.8.3:** automatischer Wechsel zwischen zwei gespeicherten Vorschlagssätzen, vollständige Texte und Gliederung, Aufklappen, Übernahme in das Entwurfsformular, Reload sowie 900/600-Pixel-Ansichten ohne eigenen Scrollbereich.
-- **Bestandserhalt:** Fingerprints von 17 Tabellen und 161 geschützten Dateien vor/nach Update unverändert. Einschließlich Artikeln, Medien, Sortiment, gespeicherten Vorschlägen und verschlüsselten KI-Zugängen. Alle 180 Nutzdateien beider Module gegen ihre Manifeste geprüft.
-- **Syntax und Paket:** 19 PHP-Dateien einschließlich des ausgelieferten Installers syntaktisch geprüft. JavaScript-Syntax und alle 30 eingebetteten Paketdateien geprüft. Gemeinsamer Adminstil synchron.
-- **Abbildungen:** fünf aktuelle Ansichten; illustrative redaktionelle Texte ausschließlich in der Browseransicht ersetzt. Keine Speicherung und keine KI-Anfrage.
+- **47 Ablaufprüfungen und 17 Chromium-Prüfungen im frischen GX26-Shop:** beide exakten Installer, leere Neuinstallation, native Modulverwaltung, De-/Wiederinstallation mit Datenerhalt und Selbstentfernung der Root-Installer. Die einzige temporäre Umgebung einschließlich Datenbank-Volume und Netzwerk wurde entfernt. Der Hauptshop blieb dabei unverändert.
+- **6 Browserprüfungen des Hauptshop-Updates:** beide Installer abgeschlossen und entfernt, beide Versionen korrekt in GX26, vorhandene geprüfte Anbieterzugänge erhalten.
+- **11 Prüfungen der Artikelliste:** gemeinsamer Navigationseintrag, auffälliger Plus-Button links oberhalb der Suche, Statusmarkierungen, neuer/bestehender Editor, Papierkorb sowie 1440/900-Pixel-Ansichten.
+- **25 Prüfungen der Bildhilfe:** ungespeicherte Artikeldaten, bearbeitete Beschreibung, Stilwechsel, ChatGPT/Gemini-Ziele, isolierter Tab, Kopier- und Popup-Ersatzwege, unverändertes Artikelformular und bestehender Upload. Kopieren und externe Tabs wurden simuliert; keine Anbieteraufrufe.
+- **Bestandserhalt:** 17 geschützte Tabellen kontrolliert, ausschließlich der installierte Blogversionswert geändert. Inhalte, Sortiment, Medien, verschlüsselte KI-Zugänge und Vorschlagsverlauf erhalten. 11 geschützte Medien-/Shop-/Schlüsseldateien unverändert; alle 182 installierten Nutzdateien beider Module stimmen mit den Paketmanifesten überein.
+- **Syntax und Paket:** 100 PHP-Dateien einschließlich beider fertigen Installer sowie 17 JavaScript-Dateien bestanden. Zwei isolierte Builderprüfungen bestanden, gemeinsamer Adminstil synchron. 152 eingebettete Blogdateien und 32 eingebettete KI-Dateien mit Pfad, Größe und SHA-256 kontrolliert.
 
-Diese Releaseprüfung hat **keine echten Anbieteraufrufe** ausgelöst. Die Anbieterlogik wurde nicht geändert. Die detaillierten aktuellen Ergebnisse stehen in [test-results.json](test-results.json).
+Die tatsächliche Bilderstellung über den Browserweg hat der Nutzer bestätigt; der verwendete Anbieter wurde dabei nicht benannt. Die automatisierte Releaseabnahme erzeugt keine Bilder und tätigt keine echten KI-Anfragen. Details: [test-results.json](test-results.json).
 
 ## Frühere Nachweise
 
-OpenAI: echte Entwürfe und Themenideen bereits bestätigt. Gemini: Modelllistentest, Entwürfe, Themenideen, Verlauf nach Reload und Themenübernahme am 09.11.2026 durch den Nutzer bestätigt. Anthropic: weiterhin nur simulierte Antworten und Fehlerfälle.
-
-119 isolierte Anbieter-/Fehlerprüfungen wurden zuletzt für 0.8.2 erneut ausgeführt. 187 native Prüfungen mit getrennten Testtabellen stammen aus 0.8.0. Diese früheren Ergebnisse sind keine erneut ausgeführten Tests von 0.8.3.
+OpenAI-Entwürfe und Themenideen sowie Gemini-Modellliste, Entwürfe, Themenideen und gespeicherter Verlauf wurden bereits durch den Nutzer bestätigt. Anthropic ist weiterhin ausschließlich mit simulierten Antworten geprüft. Die 119 isolierten Anbieter-/Fehlerprüfungen (zuletzt 0.8.2), 187 nativen KI-Prüfungen (0.8.0) und 14 Vorschlagslistenprüfungen (0.8.3) sind frühere Nachweise, keine erneut ausgeführten Volltests dieses Releases.
 
 ## Grenzen
 
-Keine pauschale Freigabe anderer Shop-, PHP-, Datenbank- oder Theme-Versionen. Für das KI-Modul liegt noch kein eigener Nachweis für Shop-Unterverzeichnisse vor.
+Keine pauschale Freigabe anderer Gambio-, PHP-, Datenbank- oder Theme-Versionen. Keine neue vollständige Prüfung in Shop-Unterverzeichnissen; für das KI-Modul liegt noch kein eigener Unterverzeichnisnachweis vor. Die GX4-Grundlage und frühere Firefox-/Chromium-Loginprüfungen sind historische Nachweise. Kein unabhängiges Sicherheitsaudit oder Gambio-Zertifikat.
 
-Die verwendete MariaDB 10.10 wird seit November 2023 nicht mehr gewartet. GX26.11.0 nennt offiziell weiterhin MariaDB bis 10.10 bzw. MySQL bis 8.4. Ein zusätzlicher Test mit MySQL 8.4 ist offen; die Testdatenbank wurde nicht umgestellt. [MariaDB-Wartungsstand](https://mariadb.com/docs/release-notes/community-server/old-releases/10.10/what-is-mariadb-1010), [Gambio-Systemvoraussetzungen](https://developers.gambio.de/release-notes/26.11.0/).
+Die Testdatenbank MariaDB 10.10 ist außer Wartung. Ein zusätzlicher Test mit MySQL 8.4 bleibt offen; keine Datenbankumstellung in diesem Release.
 
-Bilderzeugung, Webrecherche, Browser-Kontoanmeldung und externe Blog-REST-API sind nicht enthalten. Kategorien werden vorgeschlagen, nicht automatisch angelegt. Veröffentlichung bleibt eine gesonderte Aktion. Ein Modelllistentest garantiert kein Guthaben oder Kontingent. Gemini ist nur im verfügbaren Free Tier kostenlos; eine bestätigte Texterstellung ist kein Abrechnungsnachweis.
+Die Bildhilfe erstellt lokal einen Text und öffnet die Anbieter-Webseite. Anmeldung, Einfügen, Bilderstellung und Download erfolgen dort manuell; anschließend wird der vorhandene Blogupload verwendet. Keine Bild-API, keine automatische Anmeldung im Modul, kein automatischer Import. Browserkonto und API-Konto haben getrennte Tarife und Limits. Ein erfolgreicher Modelllistentest bestätigt kein Guthaben.
 
-Normale Deinstallation erhält Vorschläge und Bloginhalte, entfernt aber Anbieterzugänge. Eine eigene Funktion zum vollständigen Löschen des Vorschlagsverlaufs fehlt weiterhin.
+Normale Deinstallation erhält Bloginhalte und gespeicherte Vorschläge; KI-Zugänge werden entfernt. Vollständige Blogdatenlöschung ist eine getrennte, ausdrücklich bestätigte Aktion. Eine eigene Löschfunktion für den gesamten KI-Vorschlagsverlauf fehlt weiterhin. Geplante Veröffentlichungen benötigen einen tatsächlich laufenden nativen Gambio-Aufgabenaufruf.
