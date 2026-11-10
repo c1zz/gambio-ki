@@ -122,5 +122,63 @@
     "sensitive_filename_matches": 0,
     "secret_pattern_matches": 0,
     "scope": "Pattern scan and distribution-only history review; not a proof that arbitrary secrets cannot exist."
+  },
+  "published": {
+    "blog": {
+      "url": "https://github.com/c1zz/gambio-blog/releases/tag/v0.46.0-rc.1",
+      "published_at": "2026-11-10T10:47:45Z",
+      "previous_unchanged": true,
+      "all_assets_match": true,
+      "attestation_verified": true,
+      "source_commit": "e09ed617ad8e992f3e8d959d758726163d40b9c4"
+    },
+    "ki": {
+      "url": "https://github.com/c1zz/gambio-ki/releases/tag/v0.11.0-rc.1",
+      "published_at": "2026-11-10T10:47:50Z",
+      "previous_unchanged": true,
+      "all_assets_match": true,
+      "attestation_verified": true,
+      "source_commit": "21c30000ffe90c4efad10535b50b9af04218732a"
+    }
+  },
+  "real_github_download": {
+    "blog": {
+      "success": true,
+      "sha256": "2ebbc2e22ffb2757c551173b9e4650411b76823c629ab35de22e34eb66aab236",
+      "files": 159,
+      "writes_to_module": 0,
+      "github_credentials": false
+    },
+    "ki": {
+      "success": true,
+      "sha256": "8dc4b0ad6ff86542547edc7a68331efc133af336c4215c7bec1cc210e31013f6",
+      "files": 38,
+      "writes_to_module": 0,
+      "github_credentials": false
+    }
+  },
+  "public_native_browser": {
+    "success": true,
+    "checks": [
+      "C1zzBlogSetup installed version shown",
+      "C1zzBlogSetup initial page has no error",
+      "C1zzBlogSetup real public GitHub check correctly reports no newer version",
+      "C1zzBlogAI installed version shown",
+      "C1zzBlogAI initial page has no error",
+      "C1zzBlogAI real public GitHub check correctly reports no newer version"
+    ],
+    "providerRequests": 0
+  },
+  "repositories": {
+    "c1zz/gambio-blog": "PUBLIC",
+    "c1zz/gambio-ki": "PUBLIC",
+    "c1zz/gambio-module-dev": "PRIVATE"
+  },
+  "ci": {
+    "development": 42801854561,
+    "blog_verify": 42801858183,
+    "ki_verify": 42801862127,
+    "blog_release": 42802103582,
+    "ki_release": 42802107626
   }
 }

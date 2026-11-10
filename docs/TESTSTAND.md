@@ -16,3 +16,5 @@ Die GitHub-Antworten im frischen Shop waren ausschließlich in der temporären V
 Keine neue Freigabe für GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder Unterverzeichnisinstallationen. Der neue Weg verwendet konfigurierte Shopverzeichnisse, wurde in diesem Durchlauf aber im Shop-Hauptverzeichnis geprüft. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop noch nicht kryptografisch geprüft.
 
 [Maschinelle Ergebnisse und Paketprüfsummen](test-results.json). Die vorhandenen Screenshots zeigen weiterhin die jeweils im Bilderrundgang angegebenen älteren Oberflächenstände.
+
+Nach der öffentlichen Freigabe: beide Installer mit dem echten Updater aus GX26 ohne GitHub-Zugangsdaten heruntergeladen und alle 197 Paketdateien geprüft, ohne Moduldateien zu verändern. Weitere 6 native Chromiumprüfungen bestätigen die echten GitHub-Abfragen beider Updatebereiche. Herkunftsnachweise mit der GitHub CLI gegen Repository, Workflow, Release-Tag und exakten Commit erfolgreich verifiziert. Veröffentlichte Assets stimmen mit den lokalen Prüfsummen überein; Vorgängerassets blieben unverändert.
