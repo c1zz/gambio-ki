@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
   "versions": {
-    "blog": "0.46.1",
-    "ki": "0.11.1"
+    "blog": "0.47.0",
+    "ki": "0.12.0"
   },
   "environment": {
     "gambio": "26.11.0",
@@ -24,109 +24,654 @@
       "native GX26 administrator login",
       "blog exact fresh installer removed",
       "blog final exact files",
+      "blog actual automatic check returned cached state",
+      "blog next request reuses cache",
+      "blog anonymous notice access refused",
       "ki exact fresh installer removed",
       "ki final exact files",
+      "ki actual automatic check returned cached state",
+      "ki next request reuses cache",
+      "ki anonymous notice access refused",
       "temporary containers, database volume and networks removed"
     ],
     "installers": {
       "blog": {
-        "name": "c1zz-blog-install-0.46.1.php",
-        "sha256": "9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c"
+        "name": "c1zz-blog-install-0.47.0.php",
+        "sha256": "8448d8552c65cdca1eccb03dd45cf885040ac031d3021ffbead71488ba0da234"
       },
       "ki": {
-        "name": "c1zz-ai-install-0.11.1.php",
-        "sha256": "54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91"
+        "name": "c1zz-ai-install-0.12.0.php",
+        "sha256": "1691b16107935cec894ae69851fe317130b0532604c46bde799a525d40dc1b30"
+      }
+    },
+    "github": {
+      "blog": {
+        "current": "0.47.0",
+        "preview": false,
+        "checked_at": 1794312016,
+        "expires": 1794333616,
+        "tag": "",
+        "error": ""
+      },
+      "ki": {
+        "current": "0.12.0",
+        "preview": false,
+        "checked_at": 1794312021,
+        "expires": 1794333621,
+        "tag": "",
+        "error": ""
       }
     },
     "browser": {
       "success": true,
       "checks": [
-        "C1zzBlogAdmin has public navigation and separate red footer uninstall",
-        "C1zzBlogAdmin maintenance below navigation",
-        "C1zzBlogAdmin/GettingStarted has public navigation and separate red footer uninstall",
-        "C1zzBlogAdmin/GettingStarted maintenance below navigation",
-        "C1zzBlogSettings has public navigation and separate red footer uninstall",
-        "C1zzBlogSettings maintenance below navigation",
-        "C1zzBlogAdmin/Seo has public navigation and separate red footer uninstall",
-        "C1zzBlogAdmin/Seo maintenance below navigation",
-        "C1zzBlogAdmin/Address has public navigation and separate red footer uninstall",
-        "C1zzBlogAdmin/Address maintenance below navigation",
-        "C1zzBlogMedia has public navigation and separate red footer uninstall",
-        "C1zzBlogMedia maintenance below navigation",
-        "C1zzBlogTransfer has public navigation and separate red footer uninstall",
-        "C1zzBlogTransfer maintenance below navigation",
-        "C1zzBlogAdmin/Embed has public navigation and separate red footer uninstall",
-        "C1zzBlogAdmin/Embed maintenance below navigation",
-        "C1zzBlogSetup/Update has public navigation and separate red footer uninstall",
-        "C1zzBlogSetup/Update maintenance below navigation",
-        "C1zzBlogSetup initially unverified",
-        "C1zzBlogSetup GitHub request: ",
-        "C1zzBlogSetup actual GitHub check has current status, channel and time",
-        "C1zzBlogAI initially unverified",
-        "C1zzBlogAI GitHub request: ",
-        "C1zzBlogAI actual GitHub check has current status, channel and time"
+        "/admin/start.php native menu badges and accessible update links",
+        "/admin/start.php no duplicate legacy/footer badges",
+        "/admin/start.php compact readable badges",
+        "/admin/modules native menu badges and accessible update links",
+        "/admin/modules no duplicate legacy/footer badges",
+        "/admin/modules compact readable badges",
+        "/admin/admin.php?do=C1zzBlogSetup/Update native menu badges and accessible update links",
+        "/admin/admin.php?do=C1zzBlogSetup/Update no duplicate legacy/footer badges",
+        "/admin/admin.php?do=C1zzBlogSetup/Update compact readable badges",
+        "/admin/admin.php?do=C1zzBlogAI/Update native menu badges and accessible update links",
+        "/admin/admin.php?do=C1zzBlogAI/Update no duplicate legacy/footer badges",
+        "/admin/admin.php?do=C1zzBlogAI/Update compact readable badges",
+        "C1zzBlogSetup cached notice does not authorize installation",
+        "C1zzBlogSetup unchanged preferences disabled",
+        "C1zzBlogSetup changed preferences enabled",
+        "C1zzBlogSetup channel and opt out persisted",
+        "C1zzBlogSetup disabled automatic check",
+        "C1zzBlogAI cached notice does not authorize installation",
+        "C1zzBlogAI unchanged preferences disabled",
+        "C1zzBlogAI changed preferences enabled",
+        "C1zzBlogAI channel and opt out persisted",
+        "C1zzBlogAI disabled automatic check",
+        "opt out hides both native badges",
+        "errors distinct from available updates",
+        "cached errors explained on update page",
+        "C1zzBlogSetup current version has no badge",
+        "C1zzBlogSetup no run has no progress",
+        "C1zzBlogAI current version has no badge",
+        "C1zzBlogAI no run has no progress"
       ]
     }
   },
   "isolated": {
+    "notice": 38,
     "updater": 89,
-    "permissions_and_status": 54,
-    "existing_blog": 9952,
-    "existing_ai": 119,
-    "browser_dom_editor": 79,
-    "builders": 2
+    "permissions": 58,
+    "all_php_pass_count_lines": 10137,
+    "ai_provider_checks": 119,
+    "chromium_dom": 79,
+    "builder": 2
   },
-  "main_shop": "Unchanged: Blog 0.46.0 and KI 0.11.0, available for user-driven real upgrade",
-  "limitations": [
-    "Fresh install and native UI check of exact target packages, no new historical upgrade test in this run.",
-    "Earlier update lifecycle, recovery and integrity test matrix remains historical.",
-    "No additional version/theme compatibility claim.",
-    "Shop does not verify cryptographic provenance signatures."
-  ],
-  "installers": {
-    "blog": {
-      "format": 1,
-      "name": "c1zz-blog für Gambio",
-      "module_version": "0.46.1",
-      "tag": "v0.46.1-rc.1",
-      "status": "release-candidate",
-      "repository": "c1zz/gambio-blog",
-      "installer": "c1zz-blog-install-0.46.1.php",
-      "sha256": "9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c",
-      "bytes": 466136,
-      "package_files": 160,
-      "provenance": "github-actions-attestation",
-      "update_format": 1,
-      "requirements": {
-        "php_min": 80200,
-        "gambio": [
-          "26.11.0"
+  "compact_progress": {
+    "success": true,
+    "checks": [
+      "blog compact completed update at 1600",
+      "blog completed details can be opened at 1600",
+      "blog compact completed update at 760",
+      "blog completed details can be opened at 760",
+      "blog compact completed update at 390",
+      "blog completed details can be opened at 390",
+      "blog no result before first update",
+      "blog interrupted update stays expanded",
+      "blog AJAX success collapses immediately",
+      "blog failed step remains expanded and resumable",
+      "blog network failure keeps progress visible",
+      "ki compact completed update at 1600",
+      "ki completed details can be opened at 1600",
+      "ki compact completed update at 760",
+      "ki completed details can be opened at 760",
+      "ki compact completed update at 390",
+      "ki completed details can be opened at 390",
+      "ki no result before first update",
+      "ki interrupted update stays expanded",
+      "ki AJAX success collapses immediately",
+      "ki failed step remains expanded and resumable",
+      "ki network failure keeps progress visible"
+    ],
+    "shopFilesUnchanged": true,
+    "rendering": "Native Smarty progress fragments in real admin browser; AJAX responses simulated; no update requests sent"
+  },
+  "maintenance_spacing": {
+    "success": true,
+    "cssOverrideOnly": true,
+    "shopFilesUnchanged": true,
+    "checks": [
+      {
+        "route": "C1zzBlogAdmin/Editor",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 907.375,
+            "top": 843.78125
+          }
         ],
-        "blog_min": "0.45.0"
+        "footerTop": 939.375
+      },
+      {
+        "route": "C1zzBlogAdmin",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.671875
+      },
+      {
+        "route": "C1zzBlogAdmin/GettingStarted",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.09375
+      },
+      {
+        "route": "C1zzBlogAdmin/Categories",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 711.46875,
+            "top": 647.875
+          }
+        ],
+        "footerTop": 938.640625
+      },
+      {
+        "route": "C1zzBlogSettings",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 840.375,
+            "top": 776.78125
+          }
+        ],
+        "footerTop": 939.375
+      },
+      {
+        "route": "C1zzBlogAdmin/Seo",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 847.1875,
+            "top": 783.59375
+          }
+        ],
+        "footerTop": 879.1875
+      },
+      {
+        "route": "C1zzBlogAdmin/Address",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 689.203125,
+            "top": 625.609375
+          }
+        ],
+        "footerTop": 862.84375
+      },
+      {
+        "route": "C1zzBlogMedia",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.03125
+      },
+      {
+        "route": "C1zzBlogTransfer",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 465.875,
+            "top": 402.28125
+          },
+          {
+            "bottom": 795.703125,
+            "top": 732.109375
+          }
+        ],
+        "footerTop": 827.703125
+      },
+      {
+        "route": "C1zzBlogAdmin/Embed",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.578125
+      },
+      {
+        "route": "C1zzBlogSetup/Update",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.078125
+      },
+      {
+        "route": "C1zzBlogAI",
+        "width": 1600,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 29,
+        "bars": [],
+        "footerTop": 706.84375
+      },
+      {
+        "route": "C1zzBlogAdmin/Editor",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 907.296875,
+            "top": 843.703125
+          }
+        ],
+        "footerTop": 939.296875
+      },
+      {
+        "route": "C1zzBlogAdmin",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.3125
+      },
+      {
+        "route": "C1zzBlogAdmin/GettingStarted",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.625
+      },
+      {
+        "route": "C1zzBlogAdmin/Categories",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 711.65625,
+            "top": 648.0625
+          }
+        ],
+        "footerTop": 938.828125
+      },
+      {
+        "route": "C1zzBlogSettings",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 797.5625,
+            "top": 733.96875
+          }
+        ],
+        "footerTop": 938.5625
+      },
+      {
+        "route": "C1zzBlogAdmin/Seo",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 907.375,
+            "top": 843.78125
+          }
+        ],
+        "footerTop": 939.375
+      },
+      {
+        "route": "C1zzBlogAdmin/Address",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 681.390625,
+            "top": 617.796875
+          }
+        ],
+        "footerTop": 939.03125
+      },
+      {
+        "route": "C1zzBlogMedia",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.359375
+      },
+      {
+        "route": "C1zzBlogTransfer",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 514.0625,
+            "top": 450.46875
+          },
+          {
+            "bottom": 906.890625,
+            "top": 843.296875
+          }
+        ],
+        "footerTop": 938.890625
+      },
+      {
+        "route": "C1zzBlogAdmin/Embed",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 938.90625
+      },
+      {
+        "route": "C1zzBlogSetup/Update",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.546875
+      },
+      {
+        "route": "C1zzBlogAI",
+        "width": 760,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 29,
+        "bars": [],
+        "footerTop": 806.84375
+      },
+      {
+        "route": "C1zzBlogAdmin/Editor",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 907.796875,
+            "top": 779.015625
+          }
+        ],
+        "footerTop": 939.796875
+      },
+      {
+        "route": "C1zzBlogAdmin",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.875
+      },
+      {
+        "route": "C1zzBlogAdmin/GettingStarted",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.484375
+      },
+      {
+        "route": "C1zzBlogAdmin/Categories",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 712.09375,
+            "top": 628.90625
+          }
+        ],
+        "footerTop": 939.265625
+      },
+      {
+        "route": "C1zzBlogSettings",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 567,
+            "top": 483.8125
+          }
+        ],
+        "footerTop": 939
+      },
+      {
+        "route": "C1zzBlogAdmin/Seo",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 906.90625,
+            "top": 823.71875
+          }
+        ],
+        "footerTop": 938.90625
+      },
+      {
+        "route": "C1zzBlogAdmin/Address",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": 9.25,
+            "top": -73.9375
+          }
+        ],
+        "footerTop": 939.3125
+      },
+      {
+        "route": "C1zzBlogMedia",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.609375
+      },
+      {
+        "route": "C1zzBlogTransfer",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [
+          {
+            "bottom": -52.71875,
+            "top": -155.5
+          },
+          {
+            "bottom": 907.796875,
+            "top": 824.609375
+          }
+        ],
+        "footerTop": 939.796875
+      },
+      {
+        "route": "C1zzBlogAdmin/Embed",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.828125
+      },
+      {
+        "route": "C1zzBlogSetup/Update",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 25,
+        "bars": [],
+        "footerTop": 939.875
+      },
+      {
+        "route": "C1zzBlogAI",
+        "width": 390,
+        "margin": 32,
+        "padding": 24,
+        "border": 1,
+        "buttonGap": 29,
+        "bars": [],
+        "footerTop": 931.6875
       }
+    ]
+  },
+  "limits": [
+    "Native cached available/error/current states use explicit fixtures; automatic GitHub checks before those fixtures were real and successful for both modules.",
+    "No automatic update installation. No main-shop module files or stored content changed.",
+    "No new historical-version upgrade matrix, theme/PHP/Gambio expansion or independent security audit.",
+    "The shop still does not verify Sigstore signatures locally."
+  ],
+  "predecessors": {
+    "blog": {
+      "tag": "v0.46.1-rc.1",
+      "published_at": "2026-11-10T11:08:33Z",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.46.1.php",
+          "digest": "sha256:9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c",
+          "size": 466136
+        },
+        {
+          "name": "c1zz-blog-install-0.46.1.php.sigstore.json",
+          "digest": "sha256:4654849b25cb5bf0fbdf3a61dba82eb8f5969cde4165ae668ba5eff509fec35e",
+          "size": 10789
+        },
+        {
+          "name": "LICENSE",
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a",
+          "size": 1061
+        },
+        {
+          "name": "release.json",
+          "digest": "sha256:0b152935a32c67a0d14d41c6dc8d6967c57b9bcb572d45bd57425e35a056f354",
+          "size": 526
+        },
+        {
+          "name": "SHA256SUMS",
+          "digest": "sha256:3c2a58eb95663ce0feaaeb33a2b2f49c5be9ad69dc4af8e61408fc5f0daf8ced",
+          "size": 95
+        }
+      ]
     },
     "ki": {
-      "format": 1,
-      "name": "c1zz-ki für Gambio",
-      "module_version": "0.11.1",
       "tag": "v0.11.1-rc.1",
-      "status": "release-candidate",
-      "installer": "c1zz-ai-install-0.11.1.php",
-      "sha256": "54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91",
-      "bytes": 143497,
-      "package_files": 38,
-      "requires_blog": "0.45.0",
-      "gambio_tested": "26.11.0",
-      "repository": "c1zz/gambio-ki",
-      "provenance": "github-actions-attestation",
-      "update_format": 1,
-      "requirements": {
-        "php_min": 80200,
-        "gambio": [
-          "26.11.0"
-        ],
-        "blog_min": "0.45.0"
-      }
+      "published_at": "2026-11-10T11:08:38Z",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.11.1.php",
+          "digest": "sha256:54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91",
+          "size": 143497
+        },
+        {
+          "name": "c1zz-ai-install-0.11.1.php.sigstore.json",
+          "digest": "sha256:63314fe748ca9a1b3da6ea5fe79356911934fa7e9f98155c136c399619799d1f",
+          "size": 10756
+        },
+        {
+          "name": "LICENSE",
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a",
+          "size": 1061
+        },
+        {
+          "name": "release.json",
+          "digest": "sha256:e78d97c1868d110cd6ea0936d8d2d3e078df920aeef5c754fb5f997ccba3c58b",
+          "size": 578
+        },
+        {
+          "name": "SHA256SUMS",
+          "digest": "sha256:e366412ad535ace65c54b0c225d6a347d84bbcf5b91adf55ce58ba01137c5e1b",
+          "size": 93
+        }
+      ]
     }
   }
 }

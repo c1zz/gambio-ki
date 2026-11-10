@@ -10,7 +10,7 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 `SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.11.1.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.12.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
 Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Spätere Updates starten direkt unter Update / Aktualisieren.
 
@@ -52,7 +52,7 @@ Ab Blog 0.45.0 / KI 0.10.0 lauten die Ordner `GXModules/c1zz/c1zzblog` und `GXMo
 
 ## Updates direkt in der Modulverwaltung
 
-Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Es gibt keine automatischen Hintergrundabfragen oder unbeaufsichtigten Updates.
+Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Ab diesem Stand ist die automatische Versionsprüfung nach der Adminanmeldung standardmäßig aktiv. Sie verwendet Gambios Menü-Erweiterungspunkte und einen gemeinsamen Cache je Modul: sechs Stunden bei Erfolg, 15 Minuten bei Fehlern. Unter **Update / Aktualisieren** lässt sie sich abschalten. Die Auswahl für Testversionen wird ebenfalls gespeichert; standardmäßig sind sie ausgeblendet. Ein Badge führt zu den Updatehinweisen; ein Ausrufezeichen kennzeichnet eine nicht bestätigte Prüfung. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kunden- oder Zugangsdaten. Installationen starten ausschließlich nach deiner Bestätigung.
 
 **Einmaliger Wechsel:** Ältere Blogstände bis 0.45.0 und KI-Stände bis 0.10.0 haben diesen Einstieg noch nicht. Einmal den neuen Root-Installer verwenden, um ihn einzurichten. Bei später gelöschten Modulordnern oder nicht erreichbarer Verwaltung bleibt der Root-Installer der Wiederherstellungsweg.
 

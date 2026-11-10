@@ -2,15 +2,15 @@
 
 Aktuell: Deutlicher Versionsstatus unter **Update / Aktualisieren**. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
-**Testrelease 0.11.1-rc.1 · Modulstand 0.11.1 · separat installierbare Erweiterung**
+**Testrelease 0.12.0-rc.1 · Modulstand 0.12.0 · separat installierbare Erweiterung**
 
 Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambio**. Das KI-Modul verwaltet deine Anbieterzugänge und die aktivierten Bereiche. Der Assistent öffnet sich beim Artikel unter der vorhandenen Blognavigation und nutzt den gesamten Inhaltsbereich.
 
-[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.11.1-rc.1/c1zz-ai-install-0.11.1.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
+[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.12.0-rc.1/c1zz-ai-install-0.12.0.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
-Alle Screenshots wurden am **10.11.2026 mit KI 0.11.1 und Blog 0.46.1** erneuert. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die aktuelle Updateverwaltung.
+Die bisherigen Funktionsansichten wurden am **10.11.2026 mit KI 0.11.1 und Blog 0.46.1** erneuert. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
 
 ## Vertrauen vor Installation
 
@@ -67,7 +67,7 @@ API-Schlüssel werden verschlüsselt gespeichert und später nicht wieder im For
 Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.45.0](https://github.com/c1zz/gambio-blog)**. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
 
 1. PHP-Installer und Prüfsumme zusammen herunterladen und prüfen.
-2. Nur `c1zz-ai-install-0.11.1.php` in den Shopordner hochladen und im Browser öffnen.
+2. Nur `c1zz-ai-install-0.12.0.php` in den Shopordner hochladen und im Browser öffnen.
 3. Nativ als Admin anmelden und die Installation ausdrücklich starten. Der Installer entfernt sich nach erfolgreichem Abschluss.
 4. Im KI-Modul einen Anbieter verbinden, testen und den Bereich Blog aktivieren.
 5. Im Blog bei **Artikel → Neuer Artikel → KI-Assistent** beginnen.
@@ -77,3 +77,5 @@ Spätere Updates starten direkt unter **Update / Aktualisieren**. Die Erstinstal
 Bei der normalen Deinstallation werden Zugänge und aktive Einbindungen entfernt. Blogartikel, Medien und gespeicherte Themenvorschläge bleiben erhalten. Eine Wiederinstallation benötigt neue Anbieterzugänge. Details und Sicherungshinweise stehen in der [Installationsanleitung](docs/INSTALLATION.md).
 
 Die sechs [Abbildungen](docs/BILDERRUNDGANG.md) zeigen die echte Oberfläche im lokalen Testshop mit beispielhaften redaktionellen Texten. Sie zeigen keine API-Schlüssel und dokumentieren keine zusätzlichen Anbieteraufrufe.
+
+Die Ansicht **Update / Aktualisieren** wurde für Blog 0.47.0 / KI 0.12.0 im frischen GX26-Testshop erneuert. Sie zeigt die abschaltbare automatische Prüfung und die gespeicherte Auswahl für Testversionen.
