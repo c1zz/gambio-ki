@@ -42,8 +42,8 @@ Die Bildhilfe liegt direkt beim Titelbild des Artikels. Beschreibung aus dem Art
 
 ## 7. Updates direkt im Modul
 
-Installierte Version, Ergebnis und Zeitpunkt der letzten GitHub-Prüfung sowie der abgeschlossene Updatefortschritt sind sichtbar. Testversionen lassen sich ausdrücklich einbeziehen. Für die Aufnahme wurde nur nach Updates gesucht; der dargestellte Lauf war bereits abgeschlossen.
+Die Updateverwaltung zeigt die installierte Version, den letzten Prüfstatus und die Optionen für automatische Prüfungen und Testversionen. Erfolgreiche Updates erscheinen anschließend kompakt mit aufklappbaren Details.
 
-[![Aktueller KI-Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
+[![KI-Versionsstatus und Einstellungen für automatische Updatehinweise](images/aktualisieren.png)](images/aktualisieren.png)
 
 Die Aufnahme **Update / Aktualisieren** wurde mit KI **0.12.0** erneuert. Sie zeigt den reproduzierbar gesetzten Cachezustand „aktuell“, die automatische Prüfung und die gespeicherte Testversionsauswahl; kein Update wurde dafür gestartet. Die übrigen Ansichten bleiben auf dem oben genannten Bildstand.
