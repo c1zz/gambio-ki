@@ -673,5 +673,66 @@
         }
       ]
     }
+  },
+  "publication": {
+    "blog": {
+      "url": "https://github.com/c1zz/gambio-blog/releases/tag/v0.47.0-rc.1",
+      "published_at": "2026-11-10T12:05:34Z",
+      "sha256": "8448d8552c65cdca1eccb03dd45cf885040ac031d3021ffbead71488ba0da234",
+      "source_commit": "3857e39e1dac35fbb203b4bac396d3bc1ad8a60f",
+      "all_assets_match": true,
+      "attestation_verified": true,
+      "previous_unchanged": true
+    },
+    "ki": {
+      "url": "https://github.com/c1zz/gambio-ki/releases/tag/v0.12.0-rc.1",
+      "published_at": "2026-11-10T12:05:36Z",
+      "sha256": "1691b16107935cec894ae69851fe317130b0532604c46bde799a525d40dc1b30",
+      "source_commit": "19361884eb4258581bcaa2bcc19cb125bbd97247",
+      "all_assets_match": true,
+      "attestation_verified": true,
+      "previous_unchanged": true
+    }
+  },
+  "published_downloads": {
+    "blog": {
+      "from": "0.46.1",
+      "to": "0.47.0",
+      "sha256": "8448d8552c65cdca1eccb03dd45cf885040ac031d3021ffbead71488ba0da234",
+      "bytes": 475268,
+      "archive_validated": true,
+      "attempt": 2
+    },
+    "ki": {
+      "from": "0.11.1",
+      "to": "0.12.0",
+      "sha256": "1691b16107935cec894ae69851fe317130b0532604c46bde799a525d40dc1b30",
+      "bytes": 152845,
+      "archive_validated": true,
+      "attempt": 1
+    }
+  },
+  "operator_updates_readonly": {
+    "blog": {
+      "version": "0.47.0",
+      "all_files_match": true,
+      "completed_steps": 9,
+      "expected_steps": 9,
+      "error": ""
+    },
+    "ki": {
+      "version": "0.12.0",
+      "all_files_match": true,
+      "completed_steps": 7,
+      "expected_steps": 7,
+      "error": ""
+    }
+  },
+  "publication_note": "Both operator-initiated updates completed during publication verification. Only manifests and journals were read; the agent did not start an update. The additional unauthenticated GitHub download check encountered intermittent network failures and completed with a bounded retry.",
+  "ci": {
+    "development": 42812577037,
+    "blog_release": 42812766324,
+    "ki_release": 42812770113,
+    "conclusion": "success"
   }
 }

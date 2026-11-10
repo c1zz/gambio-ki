@@ -2,7 +2,7 @@
 
 **Blog 0.47.0-rc.1 / KI 0.12.0-rc.1**, 10. November 2026.
 
-Die exakten Installer wurden in einem frisch installierten **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu** geprüft. Danach wurden Testcontainer, Datenbank-Volume, Netzwerke und Shopkopie entfernt. Der Haupttestshop bleibt auf dem vom Betreiber installierten Stand 0.46.1 / 0.11.1; dessen Updates führt er selbst aus.
+Die exakten Installer wurden in einem frisch installierten **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu** geprüft. Danach wurden Testcontainer, Datenbank-Volume, Netzwerke und Shopkopie entfernt. Der Haupttestshop war zu Beginn auf 0.46.1 / 0.11.1; dessen Updates führt der Betreiber selbst aus.
 
 - 19 native Prüfungen: frischer Shop, beide Root-Installer und ihre Entfernung, sämtliche ausgelieferten Dateiprüfsummen, echte automatische GitHub-Abfragen, erneuter Cacheabruf und verweigerter anonymer Zugriff.
 - 29 native Chromiumprüfungen: modernes und älteres Adminlayout, beide Menübadges, keine Dopplungen, lesbare Darstellung, gespeicherte Einstellungen, Abschalten, Testversionsauswahl, Fehlerstatus und fehlender Fortschrittsblock ohne Updatelauf.
@@ -14,3 +14,5 @@ Die erfolgreichen automatischen GitHub-Abfragen waren echt. Für reproduzierbare
 Keine erneute vollständige historische Update-/Wiederherstellungsmatrix und keine Erweiterung der Freigabe auf GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder weitere Shopversionen. Unterverzeichnisse werden aus der Shopkonfiguration abgeleitet, waren in diesem Durchlauf aber kein neuer nativer Testfall. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop noch nicht kryptografisch geprüft.
 
 [Maschinelle Ergebnisse und exakte Paketprüfsummen](test-results.json).
+
+Nach Veröffentlichung: Beide Release-Downloads stimmen bytegenau mit den geprüften Paketen überein. Die Herkunftsnachweise wurden gegen Repository, Workflow, Tag und exakten Commit verifiziert; Vorgängerassets sind unverändert. Ein zusätzlicher Download über den echten Updater validierte beide Pakete, beim Blog nach Wiederholung eines vorübergehenden Netzwerkfehlers. Währenddessen hat der Betreiber beide Module selbst im Haupttestshop aktualisiert. Die anschließende rein lesende Prüfung bestätigt sämtliche Manifestprüfsummen sowie 9/9 Blog- und 7/7 KI-Updateschritte ohne gespeicherten Fehler.
