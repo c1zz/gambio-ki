@@ -1,8 +1,8 @@
 # c1zz-ki für Gambio – Bilderrundgang
 
-**0.11.1-rc.1 · Abbildungen aus früherem Modulstand**
+**0.11.1-rc.1 · Modulstand 0.11.1 · Blog 0.46.1**
 
-Die Abbildungen stammen aus dem früheren Stand 0.9.0 (09.11.2026). Sechs Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
+Alle Abbildungen wurden am 10.11.2026 neu aufgenommen. Sieben Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
 
 ## 1. Bereiche und Anbieter verwalten
 
@@ -39,3 +39,9 @@ Die Auswahl im Dropdown lädt den gespeicherten Vorschlagssatz direkt und ohne e
 Die Bildhilfe liegt direkt beim Titelbild des Artikels. Beschreibung aus dem Artikel prüfen, Bildstil und Anbieter wählen, Text kopieren und auf der Anbieter-Webseite einfügen. Das fertige Bild wird anschließend über den vorhandenen Blogupload hinzugefügt. Die Abbildung zeigt eine lokal vorbereitete Beschreibung; kein Bild wurde für die Aufnahme generiert.
 
 [![Bildbeschreibung mit Stilwahl, ChatGPT/Gemini und Kopierfunktion](images/blogbild-browser.png)](images/blogbild-browser.png)
+
+## 7. Updates direkt im Modul
+
+Installierte Version, Ergebnis und Zeitpunkt der letzten GitHub-Prüfung sowie der abgeschlossene Updatefortschritt sind sichtbar. Testversionen lassen sich ausdrücklich einbeziehen. Für die Aufnahme wurde nur nach Updates gesucht; der dargestellte Lauf war bereits abgeschlossen.
+
+[![Aktueller KI-Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)

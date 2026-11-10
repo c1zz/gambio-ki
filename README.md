@@ -10,6 +10,8 @@ Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambi
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
+Alle Screenshots wurden am **10.11.2026 mit KI 0.11.1 und Blog 0.46.1** erneuert. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die aktuelle Updateverwaltung.
+
 ## Vertrauen vor Installation
 
 Du installierst Software eines zunächst fremden Anbieters in einen Shop, mit dem du Geld verdienen möchtest. **Vertrauen muss deshalb vor der Installation entstehen.** Wir zeigen Herkunft, Änderungen, Datenzugriffe, tatsächliche Prüfergebnisse und bekannte Grenzen. Du entscheidest über Installation und Updates. Prüfsummen und Herkunftsnachweise werden klar von einer unabhängigen Sicherheitsprüfung unterschieden.
