@@ -1,14 +1,9 @@
-# c1zz-ki 0.11.0-rc.1
+# c1zz-ki 0.11.1-rc.1
 
-Nach der Erstinstallation können neue Modulversionen direkt unter **Update / Aktualisieren** aus GitHub bezogen werden. Das erneute Kopieren einer PHP-Datei in den Shop-Root entfällt. Für den einmaligen Wechsel von älteren Ständen ohne Updatefunktion wird weiterhin der neue Root-Installer benötigt.
+Die Update-Seite zeigt jetzt die installierte Version und einen deutlichen Versionsstatus: noch nicht geprüft, aktuell für die geprüfte Auswahl, Update verfügbar oder Prüfung nicht bestätigt. Die letzte erfolgreiche Prüfung und die Berücksichtigung von Testversionen bleiben nachvollziehbar. Ergebnisse gelten höchstens 30 Minuten und für den geprüften Paketstand; bloßes Öffnen der Seite fragt GitHub weiterhin nicht ab.
 
-- Nach Updates suchen, Änderungen lesen, Sicherung bestätigen und ausdrücklich starten. Testversionen erscheinen nur nach bewusster Auswahl.
-- HTTPS, feste GitHub-Quelle, GitHub-Asset-Prüfsumme, Paketinhalt und installierte Dateien prüfen. Heruntergeladene Installer werden nur als Datencontainer gelesen, nicht ausgeführt.
-- Fortschritt bleibt bei Fehlern erhalten; eine neue Anmeldung kann den Lauf fortsetzen. Wiederholte erfolgreiche Schritte werden nicht erneut ausgeführt.
-- Artikel, Medien, Einstellungen und KI-Zugänge erhalten. Lokale Moduländerungen und gleichzeitige c1zz-Updates blockieren die Übernahme.
-- Erfolgreiche Wiederherstellung über den Root-Installer schließt unterbrochene Updatejournale ab. Kein automatisches Zurückrollen von Datenbankänderungen.
-- Vertrauen vor Installation und hilfreiche Inhalte zur Unterstützung von Kaufentscheidungen als Produktleitlinien dokumentiert.
+## Selbst über die Modulverwaltung aktualisieren
 
-Geprüft in einem frischen **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu**: 39 native Ablaufprüfungen und 6 Chromiumprüfungen; 89 isolierte Updaterfälle und 42 isolierte Rechte-/CSRF-Prüfungen. Die vorhandenen isolierten Modul-, Builder- und Chromiumregressionen bestehen ebenfalls. GitHub-Antworten im frischen Shop waren simuliert; das Zielpaket entspricht exakt diesem Installer. Details: [Teststand](docs/TESTSTAND.md).
+Von KI 0.11.0 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Der Root-Installer bleibt für Erstinstallation und Wiederherstellung verfügbar.
 
-Der öffentliche Release-Workflow erstellt einen Herkunftsnachweis für die vollständige Installerdatei. **Im Shop wird diese Signatur noch nicht kryptografisch geprüft**; dort gelten HTTPS-Quellen- und Integritätsprüfungen. Ein unabhängiger Penetrationstest liegt nicht vor. Keine neue Freigabe für weitere Gambio-, PHP- oder Theme-Versionen.
+Prüfung mit Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu: siehe [Teststand](docs/TESTSTAND.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.

@@ -1,23 +1,19 @@
 {
   "date": "2026-11-10",
-  "blog_version": "0.46.0",
-  "ai_version": "0.11.0",
+  "versions": {
+    "blog": "0.46.1",
+    "ki": "0.11.1"
+  },
   "environment": {
     "gambio": "26.11.0",
     "php": "8.2.31",
     "database": "MariaDB 10.10",
     "theme": "Malibu"
   },
-  "isolated_existing_blog": 9952,
-  "isolated_existing_ai": 119,
-  "isolated_updater": 89,
-  "isolated_updater_permissions": 42,
-  "isolated_chromium": 79,
-  "builder_checks": 2,
   "fresh": {
     "success": true,
+    "cleanup": true,
     "checks": [
-      "original GX26 checksum",
       "official full-package layout for 26.11.0",
       "original package declares version 26.11.0",
       "fresh package has no prepared blog module",
@@ -26,159 +22,111 @@
       "fresh database has zero blog tables",
       "native GX26 login form",
       "native GX26 administrator login",
-      "blog fresh root installer removed",
-      "ki fresh root installer removed",
-      "synthetic example content seeded",
-      "native GX26 login form",
-      "native GX26 administrator login",
-      "native blog update category rendered",
-      "anonymous updater access redirects to native login",
-      "invalid CSRF cannot query updates",
-      "stable channel excludes release candidates",
-      "native GitHub RC candidate displayed",
-      "explicit backup confirmation required",
-      "foreign run token denied",
-      "native download and package validation",
-      "duplicate native POST does not repeat completed step",
-      "native module replacement completed",
-      "native Chromium updater checks",
-      "all article, media, setting, provider credential and secret fingerprints preserved",
-      "blog final version",
-      "blog final exact package hashes, fixture removed",
-      "blog final durable journal",
-      "ki final version",
-      "ki final exact package hashes, fixture removed",
-      "ki final durable journal",
-      "blog native recovery closes interrupted update journal",
-      "ki native recovery closes interrupted update journal",
-      "recovery preserves content and provider credentials",
-      "updates create no root installer",
-      "public blog still available",
-      "journal inaccessible over HTTP",
+      "blog exact fresh installer removed",
+      "blog final exact files",
+      "ki exact fresh installer removed",
+      "ki final exact files",
       "temporary containers, database volume and networks removed"
     ],
-    "cleanup": true,
-    "externalRequests": 0,
+    "installers": {
+      "blog": {
+        "name": "c1zz-blog-install-0.46.1.php",
+        "sha256": "9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c"
+      },
+      "ki": {
+        "name": "c1zz-ai-install-0.11.1.php",
+        "sha256": "54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91"
+      }
+    },
     "browser": {
       "success": true,
       "checks": [
-        "blog resumes after module replacement in a new session",
-        "blog sequential AJAX steps completed without reload",
-        "release notes escaped as text",
-        "AI complete AJAX update starts and finishes without root upload",
-        "all seven AI steps complete",
-        "new AI version and providers rendered"
+        "C1zzBlogAdmin has public navigation and separate red footer uninstall",
+        "C1zzBlogAdmin maintenance below navigation",
+        "C1zzBlogAdmin/GettingStarted has public navigation and separate red footer uninstall",
+        "C1zzBlogAdmin/GettingStarted maintenance below navigation",
+        "C1zzBlogSettings has public navigation and separate red footer uninstall",
+        "C1zzBlogSettings maintenance below navigation",
+        "C1zzBlogAdmin/Seo has public navigation and separate red footer uninstall",
+        "C1zzBlogAdmin/Seo maintenance below navigation",
+        "C1zzBlogAdmin/Address has public navigation and separate red footer uninstall",
+        "C1zzBlogAdmin/Address maintenance below navigation",
+        "C1zzBlogMedia has public navigation and separate red footer uninstall",
+        "C1zzBlogMedia maintenance below navigation",
+        "C1zzBlogTransfer has public navigation and separate red footer uninstall",
+        "C1zzBlogTransfer maintenance below navigation",
+        "C1zzBlogAdmin/Embed has public navigation and separate red footer uninstall",
+        "C1zzBlogAdmin/Embed maintenance below navigation",
+        "C1zzBlogSetup/Update has public navigation and separate red footer uninstall",
+        "C1zzBlogSetup/Update maintenance below navigation",
+        "C1zzBlogSetup initially unverified",
+        "C1zzBlogSetup GitHub request: ",
+        "C1zzBlogSetup actual GitHub check has current status, channel and time",
+        "C1zzBlogAI initially unverified",
+        "C1zzBlogAI GitHub request: ",
+        "C1zzBlogAI actual GitHub check has current status, channel and time"
       ]
     }
   },
+  "isolated": {
+    "updater": 89,
+    "permissions_and_status": 54,
+    "existing_blog": 9952,
+    "existing_ai": 119,
+    "browser_dom_editor": 79,
+    "builders": 2
+  },
+  "main_shop": "Unchanged: Blog 0.46.0 and KI 0.11.0, available for user-driven real upgrade",
   "limitations": [
-    "Native GitHub responses simulated only in the disposable predecessor; final package bytes unchanged.",
-    "No cryptographic signature verification inside the shop.",
-    "No new GX5, Honeygrid, PHP 8.3 or subdirectory qualification.",
-    "No independent penetration test."
+    "Fresh install and native UI check of exact target packages, no new historical upgrade test in this run.",
+    "Earlier update lifecycle, recovery and integrity test matrix remains historical.",
+    "No additional version/theme compatibility claim.",
+    "Shop does not verify cryptographic provenance signatures."
   ],
   "installers": {
     "blog": {
-      "version": "0.46.0",
-      "sha256": "2ebbc2e22ffb2757c551173b9e4650411b76823c629ab35de22e34eb66aab236",
-      "bytes": 463936,
-      "files": 159
+      "format": 1,
+      "name": "c1zz-blog für Gambio",
+      "module_version": "0.46.1",
+      "tag": "v0.46.1-rc.1",
+      "status": "release-candidate",
+      "repository": "c1zz/gambio-blog",
+      "installer": "c1zz-blog-install-0.46.1.php",
+      "sha256": "9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c",
+      "bytes": 466136,
+      "package_files": 160,
+      "provenance": "github-actions-attestation",
+      "update_format": 1,
+      "requirements": {
+        "php_min": 80200,
+        "gambio": [
+          "26.11.0"
+        ],
+        "blog_min": "0.45.0"
+      }
     },
     "ki": {
-      "version": "0.11.0",
-      "sha256": "8dc4b0ad6ff86542547edc7a68331efc133af336c4215c7bec1cc210e31013f6",
-      "bytes": 142433,
-      "files": 38
+      "format": 1,
+      "name": "c1zz-ki für Gambio",
+      "module_version": "0.11.1",
+      "tag": "v0.11.1-rc.1",
+      "status": "release-candidate",
+      "installer": "c1zz-ai-install-0.11.1.php",
+      "sha256": "54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91",
+      "bytes": 143497,
+      "package_files": 38,
+      "requires_blog": "0.45.0",
+      "gambio_tested": "26.11.0",
+      "repository": "c1zz/gambio-ki",
+      "provenance": "github-actions-attestation",
+      "update_format": 1,
+      "requirements": {
+        "php_min": 80200,
+        "gambio": [
+          "26.11.0"
+        ],
+        "blog_min": "0.45.0"
+      }
     }
-  },
-  "main_shop": {
-    "success": true,
-    "tables": 19,
-    "only_expected_change": "c1zz_blog_meta.installed_package_version: 0.45.0 -> 0.46.0",
-    "protected_files": 11,
-    "package_files": 195,
-    "native_browser": {
-      "success": true,
-      "checks": [
-        "five native blog update steps completed",
-        "blog root installer removed",
-        "AI native update completed and installer removed",
-        "final blog version displayed",
-        "existing verified provider statuses retained",
-        "both final versions displayed in native GX26 module center",
-        "only new module folder c1zzblog",
-        "only new module folder c1zzki"
-      ],
-      "providerRequests": 0
-    }
-  },
-  "php_syntax_files": 107,
-  "installer_syntax_files": 2,
-  "javascript_syntax_files": 20,
-  "public_history_review": {
-    "blog_objects": 176,
-    "ki_objects": 83,
-    "historical_embedded_files": 879,
-    "sensitive_filename_matches": 0,
-    "secret_pattern_matches": 0,
-    "scope": "Pattern scan and distribution-only history review; not a proof that arbitrary secrets cannot exist."
-  },
-  "published": {
-    "blog": {
-      "url": "https://github.com/c1zz/gambio-blog/releases/tag/v0.46.0-rc.1",
-      "published_at": "2026-11-10T10:47:45Z",
-      "previous_unchanged": true,
-      "all_assets_match": true,
-      "attestation_verified": true,
-      "source_commit": "e09ed617ad8e992f3e8d959d758726163d40b9c4"
-    },
-    "ki": {
-      "url": "https://github.com/c1zz/gambio-ki/releases/tag/v0.11.0-rc.1",
-      "published_at": "2026-11-10T10:47:50Z",
-      "previous_unchanged": true,
-      "all_assets_match": true,
-      "attestation_verified": true,
-      "source_commit": "21c30000ffe90c4efad10535b50b9af04218732a"
-    }
-  },
-  "real_github_download": {
-    "blog": {
-      "success": true,
-      "sha256": "2ebbc2e22ffb2757c551173b9e4650411b76823c629ab35de22e34eb66aab236",
-      "files": 159,
-      "writes_to_module": 0,
-      "github_credentials": false
-    },
-    "ki": {
-      "success": true,
-      "sha256": "8dc4b0ad6ff86542547edc7a68331efc133af336c4215c7bec1cc210e31013f6",
-      "files": 38,
-      "writes_to_module": 0,
-      "github_credentials": false
-    }
-  },
-  "public_native_browser": {
-    "success": true,
-    "checks": [
-      "C1zzBlogSetup installed version shown",
-      "C1zzBlogSetup initial page has no error",
-      "C1zzBlogSetup real public GitHub check correctly reports no newer version",
-      "C1zzBlogAI installed version shown",
-      "C1zzBlogAI initial page has no error",
-      "C1zzBlogAI real public GitHub check correctly reports no newer version"
-    ],
-    "providerRequests": 0
-  },
-  "repositories": {
-    "c1zz/gambio-blog": "PUBLIC",
-    "c1zz/gambio-ki": "PUBLIC",
-    "c1zz/gambio-module-dev": "PRIVATE"
-  },
-  "ci": {
-    "development": 42801854561,
-    "blog_verify": 42801858183,
-    "ki_verify": 42801862127,
-    "blog_release": 42802103582,
-    "ki_release": 42802107626
   }
 }

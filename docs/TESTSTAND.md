@@ -1,5 +1,19 @@
 # Teststand und Grenzen
 
+**Blog 0.46.1-rc.1 / KI 0.11.1-rc.1**, 10. November 2026.
+
+Diese kleine Folgeversion ergänzt die gemeinsame Navigation und die Versionsstatusanzeige. Der Hauptshop bleibt auf Blog 0.46.0 / KI 0.11.0, damit der Betreiber den echten GitHub-Updateweg selbst prüfen kann.
+
+Gezielte Prüfung der exakten neuen Installer in einem frischen Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu; anschließend vollständige Entfernung der temporären Umgebung. Der Browser prüft die Navigation in neun Blogbereichen und den Versionsstatus beider Module nach echter GitHub-Abfrage. Keine KI-Anfragen oder Änderungen am Hauptshop.
+
+89 isolierte Updaterprüfungen, 54 Rechte-/CSRF-/Statusprüfungen, die bisherigen isolierten Modulprüfungen, zwei Builderprüfungen und 79 Chromium-DOM-/Editorprüfungen. Details: [maschineller Bericht](test-results.json).
+
+Die vollständige native Update-/Wiederherstellungsmatrix der vorherigen Version bleibt unten als historischer Nachweis erhalten; sie wird nicht als neuer Volltest ausgegeben. Kein neuer historischer Versionswechsel in diesem frischen UI-Prüflauf. Keine zusätzliche Freigabe anderer Shop-, PHP- oder Theme-Versionen; keine kryptografische Signaturprüfung im Shop.
+
+---
+
+# Vorheriger Teststand 0.46.0 / 0.11.0
+
 **Blog 0.46.0-rc.1 / KI 0.11.0-rc.1**, 10. November 2026.
 
 Geprüfte Kombination: **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**.
