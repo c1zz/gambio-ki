@@ -1,13 +1,9 @@
-# c1zz-ki 0.12.0-rc.1
+# c1zz-ki 0.12.1-rc.1
 
-Nach der Adminanmeldung prüft das Modul im Hintergrund auf neue Versionen und zeigt einen kleinen Hinweis direkt am Gambio-Menülink. Ein bestätigtes Update erhält eine „1“, eine fehlgeschlagene Prüfung ein „!“. Der Badge öffnet **Update / Aktualisieren**; ein Update startet weiterhin ausschließlich nach deiner Bestätigung.
+Der Deinstallationsdialog bietet jetzt eine **standardmäßig ausgeschaltete rote Checkbox** für die vollständige KI-Datenlöschung. Erst nach deiner ausdrücklichen Bestätigung werden auch gespeicherte Themenvorschläge und KI-Update-Einstellungen dauerhaft entfernt. Bereits übernommene Blogartikel und Kategorien bleiben erhalten.
 
-Die automatische Prüfung ist standardmäßig aktiv und abschaltbar. Ergebnisse werden je Modul und installiertem Stand für sechs Stunden zwischengespeichert; bei Fehlern erfolgt frühestens nach 15 Minuten ein neuer Versuch. Die Auswahl für Testversionen wird gespeichert und ist standardmäßig ausgeschaltet. „Nach Updates suchen“ prüft sofort. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kundendaten oder Zugangsschlüssel.
+Ohne Haken bleibt die Ideenhistorie wie bisher für eine Wiederinstallation erhalten. KI-Zugänge werden bei jeder Deinstallation entfernt. Nach Deaktivierung lässt sich die vollständige Bereinigung weiterhin über **Verbliebene KI-Daten entfernen** öffnen. Unterbrochene Löschschritte können fortgesetzt werden; Dateien und Datenbankstruktur sind nicht atomar löschbar.
 
-Abgeschlossene Updates erscheinen kompakt mit aufklappbaren Details. Laufende oder fehlgeschlagene Abläufe bleiben deutlich sichtbar. Der Deinstallationsbereich hat einen klaren Abstand zu den normalen Aktionen.
+Der vollständige Datenbankvergleich mit Blog **0.47.2** und der Browserlauf sind bestanden. Nach bestätigter vollständiger Löschung bleiben keine eigenen Modultabellen oder Update-Einstellungen zurück. Gambios inaktive Modulmarker, Sprachcache, fortgeschrittene Zähler und die Moduldateien bleiben bestehen. [Prüfumfang und Grenzen](docs/TESTSTAND.md).
 
-## Selbst aktualisieren
-
-Von 0.11.1 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Erstinstallation und Wiederherstellung bleiben über den Root-Installer möglich. Die neuen automatischen Hinweise stehen nach Installation dieses Updates zur Verfügung.
-
-Prüfumfang und Grenzen: [Teststand](docs/TESTSTAND.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.
+Zum Testen **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** öffnen und nach einer Sicherung **Jetzt aktualisieren** wählen. Ein Update löscht keine gespeicherten Inhalte. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit; der Shop prüft weiterhin keine kryptografische Herkunftssignatur.
