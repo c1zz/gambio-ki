@@ -10,9 +10,9 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 `SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.10.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.11.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
-Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Updates erfolgen durch Hochladen des neuen Installers.
+Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Spätere Updates starten direkt unter Update / Aktualisieren.
 
 ## Anbieter verbinden
 
@@ -49,3 +49,17 @@ Die Anbieterwahl benötigt einen erfolgreich geprüften OpenAI-/Gemini-Zugang un
 ## Übernahme der bisherigen Modulordner
 
 Ab Blog 0.45.0 / KI 0.10.0 lauten die Ordner `GXModules/c1zz/c1zzblog` und `GXModules/c1zz/c1zzki`. Die Root-Installer übernehmen `StandaloneBlog` beziehungsweise `BlogAI`. Nicht manuell eine zweite Kopie daneben entpacken. Unbekannte Dateien, Symlinks und gleichzeitig vorhandene alte und neue Ordner blockieren den Vorgang. Zuerst Blog 0.45.0, danach KI 0.10.0 aktualisieren; währenddessen den KI-Assistenten nicht verwenden. Datenbanktabellen und Medien bleiben an ihren bisherigen Orten.
+
+## Updates direkt in der Modulverwaltung
+
+Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Es gibt keine automatischen Hintergrundabfragen oder unbeaufsichtigten Updates.
+
+**Einmaliger Wechsel:** Ältere Blogstände bis 0.45.0 und KI-Stände bis 0.10.0 haben diesen Einstieg noch nicht. Einmal den neuen Root-Installer verwenden, um ihn einzurichten. Bei später gelöschten Modulordnern oder nicht erreichbarer Verwaltung bleibt der Root-Installer der Wiederherstellungsweg.
+
+Jeder Schritt prüft native Admin-/Modul-Center-Rechte und Formularschutz. Downloads werden außerhalb des Webroots zwischengespeichert. Der heruntergeladene Installer wird als Datencontainer gelesen und niemals ausgeführt oder in den Shop-Root kopiert. HTTPS, feste GitHub-Quelle, Asset-Prüfsumme, Paketpfade und Dateihashes werden geprüft. **Eine kryptografische Herkunftssignatur wird im Shop noch nicht geprüft.** Der gesonderte [Herkunftsnachweis](../SECURITY.md) lässt sich außerhalb des Shops verifizieren.
+
+Bei Fehlern stoppt die feste Fortschrittsanzeige. Nach erneutem Anmelden kann derselbe Lauf fortgesetzt werden. Vor der Dateiübernahme lässt sich die Vorbereitung verwerfen; danach ist die Wiederaufnahme vorgesehen. Es gibt kein automatisches Zurückrollen von Datenbankänderungen. Eine erfolgreiche native Wiederherstellung über den Root-Installer schließt einen passenden unterbrochenen Lauf ab.
+
+Artikel, Medien, Einstellungen und KI-Zugänge bleiben beim Update erhalten. Lokale Änderungen, zusätzliche Dateien oder Symlinks im Modulordner blockieren die Übernahme. Beide Module teilen eine Updatesperre; zuerst den laufenden Vorgang abschließen. Das kleine, gegen HTTP-Zugriff geschützte Journal liegt unter `GXModules/c1zz/.c1zz-updates/`; erfolgreiche Downloads werden entfernt.
+
+Für den Abruf braucht das Hosting PHP cURL und ZIP, ein privates PHP-Tempverzeichnis und ausgehendes HTTPS zu `api.github.com` und `release-assets.githubusercontent.com`. Es werden keine GitHub-Zugangsdaten benötigt. GitHub erhält die Server-IP und normale Abrufdaten, keine Artikel, Kunden- oder API-Zugangsdaten. Aktuell ist der neue Updateweg mit Gambio 26.11.0 geprüft.

@@ -31,6 +31,9 @@ def verify_labels(root, release):
 def inspect(root=ROOT):
     release = json.loads((root / 'release.json').read_text())
     verify_labels(root, release)
+    require(release.get('update_format') == 1, 'Missing admin update protocol')
+    require(release.get('requirements', {}).get('gambio') == ['26.11.0'], 'Unexpected update compatibility')
+    require(release['requirements'].get('php_min') == 80200, 'Unexpected PHP requirement')
     name = release['installer']
     require(re.fullmatch(r'c1zz-ai-install-\d+\.\d+\.\d+\.php', name), 'Invalid installer filename')
     file = root / name
@@ -72,6 +75,7 @@ def inspect(root=ROOT):
     native_version = re.search(r'^version:.*?(\d+\.\d+\.\d+)', receipt, re.M)
     require(native_version and native_version[1] == release['module_version'], 'GX26 version receipt differs')
     manifest = json.loads(contents[PREFIX + 'package-manifest.json'])
+    require(manifest.get('update_format') == 1, 'Module does not advertise update protocol')
     require(manifest['version'] == release['module_version'], 'Module manifest version differs')
     require(manifest['files'] == [item for item in package['files'] if item['path'] != PREFIX + 'package-manifest.json'], 'Module manifest differs from installer files')
     return release, contents

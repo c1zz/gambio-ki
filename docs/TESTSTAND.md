@@ -1,15 +1,18 @@
 # Teststand und Grenzen
 
-**Blog 0.45.0-rc.1 / KI 0.10.0-rc.1**, 10. November 2026.
+**Blog 0.46.0-rc.1 / KI 0.11.0-rc.1**, 10. November 2026.
 
-Geprüfte Kombination: **Gambio GX26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**.
+Geprüfte Kombination: **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**.
 
-- Beide exakten Installer frisch installiert; 51 Ablauf- und 17 Browserprüfungen einschließlich De-/Wiederinstallation. Die temporäre Umgebung wurde vollständig entfernt.
-- 353 native Blogprüfungen, 51 native Sicherheitsprüfungen und 187 native KI-Prüfungen mit getrennten Testtabellen und simulierten Anbietern bestanden.
-- 9952 isolierte Blogprüfungen, 119 isolierte KI-Prüfungen, 79 isolierte Chromiumprüfungen und zwei Builderprüfungen bestanden. 99 PHP-Quelldateien und 18 JavaScript-Dateien syntaktisch geprüft.
-- 8 Browserprüfungen des bestehenden Shopupdates sowie 6 Prüfungen der Auditkorrekturen, 14 des Kategorienmenüs und 32 der Bildhilfe bestanden.
-- 19 Tabellen verglichen: ausschließlich der erwartete Blog-Paketversionswert geändert. Medien, echte KI-Zugänge und Einstellungen erhalten; 183 installierte Nutzdateien stimmen mit ihren Paketmanifesten überein. Die alten Modulordner sind entfernt.
+- Beide exakten Installer frisch installiert und anschließend über den neuen nativen Admin-Updateweg übernommen: 39 Ablaufprüfungen und 6 echte Chromiumprüfungen. Die einzige temporäre Umgebung wurde vollständig entfernt.
+- Download-/Manifestprüfung, unveränderte Zielpakete, keine Root-Uploads beim Update, doppelte POST-Aufrufe, fremder Lauftoken, neue Anmeldung während des Updates und Wiederherstellung geprüft.
+- Artikel, Bilder, Einstellungen, KI-Testzugang und Schlüsseldatei über Prüfsummen erhalten. Keine externen KI-Anfragen.
+- 89 isolierte Updaterfälle, 42 isolierte Rechte-/CSRF-/Laufprüfungen, 9952 bisherige isolierte Blogprüfungen und 119 isolierte KI-Prüfungen bestanden.
+- 79 bestehende Chromium-DOM-/Editorprüfungen und zwei Builderprüfungen bestanden. 107 PHP-Quelldateien, beide Installer und 20 JavaScript-Dateien syntaktisch geprüft.
+- Im bestehenden GX26-Hauptshop beide neuen Installer über den nativen Browserablauf eingespielt: 8 Prüfungen bestanden. 19 Tabellen verglichen; ausschließlich der erwartete Blog-Paketversionswert änderte sich. Alle 11 geschützten Dateien und 195 ausgelieferten Nutzdateien geprüft.
 
-Die native Rollenmatrix prüft die echten Zugriffswächter mit temporären Datenbankrollen, keine vollständige HTTP-Rollenmatrix. Externe Anbieter wurden nicht aufgerufen. Ein unabhängiger Penetrationstest liegt nicht vor. Es gibt keine neue Freigabe für GX5, Honeygrid, PHP 8.3 oder MySQL 8.4.
+Die GitHub-Antworten im frischen Shop waren ausschließlich in der temporären Vorgängerversion simuliert. Die tatsächlich übernommenen Zielpakete sind unverändert und enthalten keine Testtransportlogik. Dies ist kein Nachweis eines damaligen echten GitHub-Downloads. Die vorherige vollständige native Blog-/KI-Auditmatrix gehörte zu Blog 0.45.0 / KI 0.10.0; sie wurde für diese Ergänzung nicht als neuer Volltest ausgegeben.
 
-Die [maschinellen Ergebnisse](test-results.json) enthalten die Prüfumfänge und die SHA-256-Werte der tatsächlich getesteten Installer. Abbildungen im Bilderrundgang stammen teilweise aus früheren Versionen.
+Keine neue Freigabe für GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder Unterverzeichnisinstallationen. Der neue Weg verwendet konfigurierte Shopverzeichnisse, wurde in diesem Durchlauf aber im Shop-Hauptverzeichnis geprüft. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop noch nicht kryptografisch geprüft.
+
+[Maschinelle Ergebnisse und Paketprüfsummen](test-results.json). Die vorhandenen Screenshots zeigen weiterhin die jeweils im Bilderrundgang angegebenen älteren Oberflächenstände.
