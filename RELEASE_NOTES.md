@@ -1,14 +1,13 @@
-# c1zz-ki für Gambio · 0.9.0-rc.1
+# c1zz-ki für Gambio · 0.10.0-rc.1
 
-Blogbilder mit dem Browserkonto erstellen: Im Artikeleditor öffnet „Bild beim Anbieter erstellen“ eine bearbeitbare Bildbeschreibung aus Titel, Kurzbeschreibung und Kategorie.
+Dieses Update behebt die Befunde des lokalen Audits und passt die Verwaltung an den gemeinsamen c1zz-Stil an.
 
-- ChatGPT und Google Gemini werden bei erfolgreich geprüftem API-Zugang und aktiviertem Blogbereich angeboten.
-- Illustration, Foto oder minimalistische Grafik wählen; Beschreibung und weitere Artikelauszüge selbst ergänzen.
-- „Beschreibung kopieren & Anbieter öffnen“ öffnet die Anbieter-Webseite in einem getrennten Tab. Dort anmelden, Text einfügen, Bild erstellen und herunterladen; anschließend den bestehenden Blog-Bildupload nutzen.
-- Keine Bild-API-Anfrage aus dem Modul. Browserkonto, Tarif und Limits gelten separat; API-Schlüssel melden nicht im Browser an.
-- Bei blockierter Zwischenablage manuell kopieren, bei blockiertem Popup den Anbieterlink verwenden. Artikel und Medien bleiben unverändert; kein automatischer Import.
-- Entwürfe, Vorschlagsverlauf und Anbieterzugänge bleiben beim Update erhalten.
+- Das Schlüsselformular verwendet einen Feldnamen, den Gambios native Diagnose bereits vor dem Aufruf des Modulcontrollers maskiert. Schlüssel werden weiterhin nicht an den Browser zurückgegeben.
+- Fehlgeschlagene Verbindungsprüfungen und andere Fehler erscheinen als rote Fehlermeldungen. Nicht eingerichtete Anbieter erhalten eine neutrale Darstellung.
+- Eigenes Menüicon und gemeinsame Gestaltung mit dem Blogmodul.
+- Die Bildhilfe bestätigt zuerst das Kopieren, bevor sie den Anbieter öffnet. Bei gesperrter Zwischenablage bleibt ein manueller Kopierweg verfügbar.
+- Der Modulordner heißt jetzt `GXModules/c1zz/c1zzki`. Der Installer übernimmt `BlogAI`; unbekannte Dateien, Symlinks und doppelte Ordner blockieren die Übernahme.
 
-Die Bilderstellung über diesen Browserweg wurde vom Nutzer bestätigt. Automatisierte Prüfungen simulieren Kopieren und Tabs; sie erzeugen keine Bilder beim Anbieter.
+**Zuerst Blog 0.45.0 installieren oder aktualisieren, danach KI 0.10.0.** Vorhandene Zugänge, geprüfte Verbindungszustände, Bereichseinstellungen und Themenideen bleiben beim Update erhalten. Keine automatischen Anbieteraufrufe beim Update.
 
-Modulstand und Installer: **0.9.0**. Voraussetzung: aktives c1zz-blog ab 0.42.0; gemeinsam geprüft mit **0.44.0**. Nur `c1zz-ai-install-0.9.0.php` hochladen und ohne vorherige Deinstallation aktualisieren. [Installation](docs/INSTALLATION.md) · [Teststand](docs/TESTSTAND.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).
+Nur `c1zz-ai-install-0.10.0.php` in den Shopordner hochladen und den geführten Ablauf ausführen. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand](docs/TESTSTAND.md).

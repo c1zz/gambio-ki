@@ -2,7 +2,7 @@
 
 ## Voraussetzungen und Sicherung
 
-Aktives c1zz-blog ab 0.42.0, Gambio GX26 und PHP ab 8.2 mit cURL, OpenSSL und ZIP. Tatsächlich geprüft sind GX26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu. Der Shop benötigt ausgehendes HTTPS zum gewählten Anbieter.
+Aktives c1zz-blog ab 0.45.0, Gambio GX26 und PHP ab 8.2 mit cURL, OpenSSL und ZIP. Tatsächlich geprüft sind GX26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu. Der Shop benötigt ausgehendes HTTPS zum gewählten Anbieter.
 
 Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei vorhandenen KI-Zugängen außerdem die geschützte Datei `includes/c1zz_blogai_secret.php` erhalten: Datenbank und Schlüsseldatei gehören zusammen. Nicht vor einem Update deinstallieren, da die Deinstallation Anbieterzugänge entfernt.
 
@@ -10,7 +10,7 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 `SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.9.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.10.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
 Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Updates erfolgen durch Hochladen des neuen Installers.
 
@@ -45,3 +45,7 @@ Der eigene Modulcode bleibt vorhanden. Wiederinstallation über den Modulstatus;
 Im Artikeleditor bei **Titelbild → Bild beim Anbieter erstellen** Beschreibung und Bildstil prüfen. Sie übernehmen Titel, Kurzbeschreibung und Kategorie aus dem aktuellen Formular; weitere Auszüge kannst du selbst ergänzen. Mit „Beschreibung kopieren & Anbieter öffnen“ ChatGPT oder Gemini öffnen. Dort selbst anmelden, Text einfügen, Bild erzeugen und herunterladen. Danach den vorhandenen Bildupload verwenden.
 
 Die Anbieterwahl benötigt einen erfolgreich geprüften OpenAI-/Gemini-Zugang und den aktivierten Blogbereich. Der Browser nutzt seine eigene Anmeldung, seinen Tarif und seine Limits. Das Modul löst keine Bild-API-Anfrage aus und übernimmt keine Bilder automatisch. Die Beschreibung bleibt beim Auf-/Zuklappen erhalten, wird aber nicht gespeichert. Gesperrte Zwischenablage: Text manuell kopieren; gesperrtes Popup: Anbieterlink verwenden. Bei Deaktivierung/Deinstallation entfällt auch die Bildhilfe; es gibt dafür keine zusätzlichen gespeicherten Zugangsdaten.
+
+## Übernahme der bisherigen Modulordner
+
+Ab Blog 0.45.0 / KI 0.10.0 lauten die Ordner `GXModules/c1zz/c1zzblog` und `GXModules/c1zz/c1zzki`. Die Root-Installer übernehmen `StandaloneBlog` beziehungsweise `BlogAI`. Nicht manuell eine zweite Kopie daneben entpacken. Unbekannte Dateien, Symlinks und gleichzeitig vorhandene alte und neue Ordner blockieren den Vorgang. Zuerst Blog 0.45.0, danach KI 0.10.0 aktualisieren; währenddessen den KI-Assistenten nicht verwenden. Datenbanktabellen und Medien bleiben an ihren bisherigen Orten.

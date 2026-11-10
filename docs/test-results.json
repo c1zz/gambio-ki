@@ -1,17 +1,32 @@
 {
-  "date": "2026-11-09",
-  "blog_version": "0.44.0",
-  "ai_version": "0.9.0",
+  "date": "2026-11-10",
+  "blog_version": "0.45.0",
+  "ai_version": "0.10.0",
   "environment": {
     "gambio": "26.11.0",
     "php": "8.2.31",
     "database": "MariaDB 10.10",
     "theme": "Malibu"
   },
+  "resolved_findings": [
+    "A-01",
+    "A-02",
+    "A-03",
+    "A-04"
+  ],
+  "isolated_blog": {
+    "suites": 22,
+    "checks": 9952
+  },
+  "isolated_ai": 119,
+  "isolated_chromium": 79,
+  "builder_checks": 2,
+  "php_source_syntax": 99,
+  "javascript_syntax": 18,
   "fresh": {
     "success": true,
-    "version": "0.9.0",
-    "blog_version": "0.44.0",
+    "version": "0.10.0",
+    "blog_version": "0.45.0",
     "gambio": "26.11.0",
     "checks": [
       "original GX26 archive checksum",
@@ -45,6 +60,10 @@
       "deinstallation removes secret file",
       "native uninstall and reinstall preserve stored suggestions",
       "blog remains active after AI deinstallation",
+      "new blog directory only",
+      "new KI directory only",
+      "full native blog integration suite",
+      "native denied permissions and early API key masking",
       "optional examples created natively",
       "blog uninstall step 0",
       "blog uninstall step 1",
@@ -64,34 +83,71 @@
     ],
     "providerRequests": 0,
     "cleanup": true,
+    "blog_installer_sha256": "802ac0cf3038e0f033561dc71172e9da74575fc8037ca9e17d6bce01891545b7",
+    "ai_installer_sha256": "32fb51f3a332f2da3da8e178a1c28ab5061eafd66d066a110b9114d7e12888fb",
     "browser_checks": 17,
+    "native_checks": 353,
+    "native_security": {
+      "success": true,
+      "checks": {
+        "native_diagnostics_mask_key_before_controller": true,
+        "blog_denies_identity_without_permissions": true,
+        "ai_denies_identity_without_permissions": true,
+        "read/Admin/native_read": true,
+        "read/Admin/requirePost": true,
+        "read/Admin/requireDelete": true,
+        "read/Settings/native_read": true,
+        "read/Settings/requirePost": true,
+        "read/Settings/requireDelete": true,
+        "read/Media/native_read": true,
+        "read/Media/requirePost": true,
+        "read/Media/requireDelete": true,
+        "read/Transfer/native_read": true,
+        "read/Transfer/requirePost": true,
+        "read/Transfer/requireDelete": true,
+        "write/Admin/native_read": true,
+        "write/Admin/requirePost": true,
+        "write/Admin/requireDelete": true,
+        "write/Settings/native_read": true,
+        "write/Settings/requirePost": true,
+        "write/Settings/requireDelete": true,
+        "write/Media/native_read": true,
+        "write/Media/requirePost": true,
+        "write/Media/requireDelete": true,
+        "write/Transfer/native_read": true,
+        "write/Transfer/requirePost": true,
+        "write/Transfer/requireDelete": true,
+        "delete/Admin/native_read": true,
+        "delete/Admin/requirePost": true,
+        "delete/Admin/requireDelete": true,
+        "delete/Settings/native_read": true,
+        "delete/Settings/requirePost": true,
+        "delete/Settings/requireDelete": true,
+        "delete/Media/native_read": true,
+        "delete/Media/requirePost": true,
+        "delete/Media/requireDelete": true,
+        "delete/Transfer/native_read": true,
+        "delete/Transfer/requirePost": true,
+        "delete/Transfer/requireDelete": true,
+        "none/Admin/native_read": true,
+        "none/Admin/requirePost": true,
+        "none/Admin/requireDelete": true,
+        "none/Settings/native_read": true,
+        "none/Settings/requirePost": true,
+        "none/Settings/requireDelete": true,
+        "none/Media/native_read": true,
+        "none/Media/requirePost": true,
+        "none/Media/requireDelete": true,
+        "none/Transfer/native_read": true,
+        "none/Transfer/requirePost": true,
+        "none/Transfer/requireDelete": true
+      },
+      "content_writes": 0,
+      "scope": "native guards; optional transactional disposable role matrix; not a full HTTP role test"
+    },
     "mainPreserved": true
   },
-  "freshBrowser": {
-    "success": true,
-    "version": "0.9.0",
-    "checks": [
-      "0.9.0 wizard completes and root installer is absent",
-      "native Module Center shows version 0.9.0",
-      "native action rejects invalid CSRF with HTTP 403",
-      "invalid native CSRF leaves module installed",
-      "native uninstall returns success JSON without redirect",
-      "native uninstall has no stuck progress dialog",
-      "native uninstall persists correct status",
-      "native uninstall updates admin menu",
-      "native install returns success JSON without redirect",
-      "native install has no stuck progress dialog",
-      "native install persists correct status",
-      "native install updates admin menu",
-      "native uninstall returns success JSON without redirect",
-      "native uninstall has no stuck progress dialog",
-      "native uninstall persists correct status",
-      "native uninstall updates admin menu",
-      "deinstalled add-on is absent from GX26 installed-only list"
-    ],
-    "installed": false
-  },
-  "mainUpdate": {
+  "update": {
     "success": true,
     "checks": [
       "five native blog update steps completed",
@@ -99,81 +155,43 @@
       "AI native update completed and installer removed",
       "final blog version displayed",
       "existing verified provider statuses retained",
-      "both final versions displayed in native GX26 module center"
+      "both final versions displayed in native GX26 module center",
+      "only new module folder c1zzblog",
+      "only new module folder c1zzki"
     ],
     "providerRequests": 0
   },
   "preservation": {
     "success": true,
-    "tables": 17,
-    "protectedFiles": 11,
-    "manifestFiles": 182,
-    "changedMetaKeys": [
-      "installed_package_version"
-    ],
-    "providerRequests": 0
+    "preserved_tables": 19,
+    "allowed_change": "installed_package_version: 0.44.0 -> 0.45.0",
+    "preserved_files": 11,
+    "verified_module_files": 183,
+    "legacy_directories_absent": true
   },
-  "syntax": {
+  "ai_native": {
+    "checks": 187,
     "success": true,
-    "phpFiles": 100
+    "external_requests": 0
   },
-  "javascript": {
-    "success": true,
-    "files": 17
+  "browser": {
+    "audit": {
+      "success": true,
+      "checks": 6
+    },
+    "categories": {
+      "success": true,
+      "checks": 14
+    },
+    "image_helper": {
+      "success": true,
+      "checks": 32
+    }
   },
-  "imageHandoff": {
-    "success": true,
-    "checks": [
-      "image helper initially collapsed",
-      "only configured image providers offered",
-      "image helper opens accessibly",
-      "unsaved title and teaser included locally",
-      "article markup remains inert text",
-      "opening helper sends no context anywhere",
-      "style change preserves edited context",
-      "closing and reopening preserves edited prompt",
-      "fixed openai destination without context or credentials in URL",
-      "new tab isolated from editor for openai",
-      "copies exact edited prompt for openai",
-      "blocked popup has visible manual link for openai",
-      "fixed gemini destination without context or credentials in URL",
-      "new tab isolated from editor for gemini",
-      "copies exact edited prompt for gemini",
-      "blocked popup has visible manual link for gemini",
-      "denied clipboard selects text for manual copy",
-      "missing clipboard API keeps manual copying available",
-      "article fields and upload selection untouched",
-      "existing image upload remains available",
-      "empty prompt opens no provider",
-      "image helper fits available width at 1440px",
-      "image helper fits available width at 900px",
-      "inactive or unsupported providers offer no browser handoff",
-      "inactive or unsupported providers offer no browser handoff"
-    ],
-    "providerRequests": 0,
-    "persistedChanges": 0
-  },
-  "articleUi": {
-    "success": true,
-    "checks": [
-      "only optional example articles in release screenshot",
-      "one combined article navigation item",
-      "article list marked active",
-      "green create button with plus above search on the left",
-      "plus icon is decorative for assistive technology",
-      "article status labels present",
-      "create action remains above search at 1440px",
-      "create action remains above search at 900px",
-      "new article opens empty editor with Articles active",
-      "existing article editor retains active Articles",
-      "trash remains separate without create action"
-    ],
-    "persistedChanges": 0
-  },
-  "builderChecks": 2,
-  "manualConfirmation": {
-    "browserImageGeneration": "User confirmed working on 2026-11-09; provider not specified"
-  },
-  "providerRequests": 0,
-  "module_version": "0.9.0"
+  "limits": [
+    "Native authorization matrix tests guards with transactional native roles, not a complete HTTP role matrix.",
+    "No external AI requests.",
+    "No new GX5, Honeygrid, PHP 8.3 or MySQL 8.4 qualification.",
+    "Local internal audit, no independent penetration test."
+  ]
 }

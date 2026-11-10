@@ -1,10 +1,12 @@
 # c1zz-ki für Gambio
 
-**Testrelease 0.9.0-rc.1 · Modulstand 0.9.0 · separat installierbare Erweiterung**
+Aktuell: Auditkorrekturen und Modulordner `GXModules/c1zz/c1zzki`. Bei Nutzung beider Module zuerst Blog 0.45.0, dann KI 0.10.0 aktualisieren. Details stehen in den [Release Notes](RELEASE_NOTES.md).
+
+**Testrelease 0.10.0-rc.1 · Modulstand 0.10.0 · separat installierbare Erweiterung**
 
 Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambio**. Das KI-Modul verwaltet deine Anbieterzugänge und die aktivierten Bereiche. Der Assistent öffnet sich beim Artikel unter der vorhandenen Blognavigation und nutzt den gesamten Inhaltsbereich.
 
-[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.9.0-rc.1/c1zz-ai-install-0.9.0.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
+[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.10.0-rc.1/c1zz-ai-install-0.10.0.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
@@ -46,16 +48,16 @@ Angeboten werden eingerichtete, erfolgreich geprüfte OpenAI-/Gemini-Zugänge be
 
 ## In Gambio eingebunden
 
-Native Adminanmeldung, Modul-Center-Rechte und Formularschutz bleiben maßgeblich. Erstellte Texte nutzen dieselbe Entwurfsspeicherung und denselben Gambio-Editor wie manuelle Blogartikel. Die Einbindung erfolgt über ein eigenes Modul unter `GXModules/c1zz/BlogAI/` und einen Gambio-Overload; es werden keine Gambio-Kerndateien verändert.
+Native Adminanmeldung, Modul-Center-Rechte und Formularschutz bleiben maßgeblich. Erstellte Texte nutzen dieselbe Entwurfsspeicherung und denselben Gambio-Editor wie manuelle Blogartikel. Die Einbindung erfolgt über ein eigenes Modul unter `GXModules/c1zz/c1zzki/` und einen Gambio-Overload; es werden keine Gambio-Kerndateien verändert.
 
 API-Schlüssel werden verschlüsselt gespeichert und später nicht wieder im Formular angezeigt. Der Verbindungstest liest nur die Modellliste. Inhalte werden erst nach dem ausdrücklichen Start an den ausgewählten Anbieter übertragen.
 
 ## Installation und Entfernung
 
-Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.42.0](https://github.com/c1zz/gambio-blog)**; für den gemeinsamen Stil wird **0.44.0** empfohlen. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
+Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.45.0](https://github.com/c1zz/gambio-blog)**. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
 
 1. PHP-Installer und Prüfsumme zusammen herunterladen und prüfen.
-2. Nur `c1zz-ai-install-0.9.0.php` in den Shopordner hochladen und im Browser öffnen.
+2. Nur `c1zz-ai-install-0.10.0.php` in den Shopordner hochladen und im Browser öffnen.
 3. Nativ als Admin anmelden und die Installation ausdrücklich starten. Der Installer entfernt sich nach erfolgreichem Abschluss.
 4. Im KI-Modul einen Anbieter verbinden, testen und den Bereich Blog aktivieren.
 5. Im Blog bei **Artikel → Neuer Artikel → KI-Assistent** beginnen.

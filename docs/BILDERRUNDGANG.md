@@ -1,8 +1,8 @@
 # c1zz-ki für Gambio – Bilderrundgang
 
-**0.9.0-rc.1 · Modulstand 0.9.0**
+**0.10.0-rc.1 · Modulstand 0.10.0**
 
-Sechs Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
+Die Abbildungen stammen aus dem früheren Stand 0.9.0 (09.11.2026). Sechs Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
 
 ## 1. Bereiche und Anbieter verwalten
 
