@@ -10,7 +10,7 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 `SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.12.2.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.12.3.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
 Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Spätere Updates starten direkt unter Update / Aktualisieren.
 
