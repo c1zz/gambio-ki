@@ -1,7 +1,9 @@
-# c1zz-ki 0.12.3-rc.1
+# c1zz-ki 0.12.6-rc.1
 
-Der **gemeinsame c1zz-Admin-Stil** ist mit Blog 0.48.4 synchronisiert und enthält jetzt gezielte Regeln für Modultabellen. Im KI-Modul entstehen dadurch keine neuen Listen oder Funktionen. KI-Anbieteraufrufe und gespeicherte Inhalte bleiben unverändert.
+Das KI-Modul verwendet das c1zz-systems-Logo und den gemeinsamen Admin-Stil für Dropdowns und Eingabefelder. Die Gestaltung ist mit Blog **0.48.15** abgestimmt. Die Anzeige des Modulstands kommt ohne den Zusatz „Teststand“ aus; diese Veröffentlichung bleibt ein Release Candidate.
 
-Die exakten Pakete wurden zusammen auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** frisch installiert und anschließend im lokalen Migrationstestshop aktualisiert. 15 fokussierte native Prüfungen, 35 Update-/Datenerhaltprüfungen sowie 34 Browserprüfungen der aktualisierten Modulverwaltung bestanden. Die KI-Prüfung umfasst Paketdateien, Version, Adminaufruf, gemeinsamen Stil und Datenerhalt; es wurden keine externen KI-Anfragen ausgelöst. [Prüfumfang und Grenzen](docs/TESTSTAND.md).
+Keine neue KI-Anbieterfunktion: Verbindungen, Entwürfe und gespeicherte Ideen bleiben erhalten. Geprüft wurden die exakten Paketdateien, frische Installation zusammen mit dem Blog, native Modulverwaltung, gemeinsame Eingabestile und Datenerhalt auf **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**. Es wurden keine externen KI-Anfragen ausgelöst. [Prüfumfang und Grenzen](docs/TESTSTAND.md).
 
-Unter **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** das Update nach einer Sicherung selbst starten. Kein erneuter vollständiger GitHub-Update- oder Deinstallationslauf. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. Kein unabhängiges Codeaudit.
+Nach einer Sicherung **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** verwenden. Bei beiden Modulen zuerst den Blog aktualisieren. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. Ein separat geprüfter Herkunftsnachweis ersetzt kein unabhängiges Codeaudit.
+
+Abschlussprüfung: 22 native Prüfungen nach frischer Installation beider exakten Pakete, 48 Prüfungen beim abschließenden Blogupdate und 79 isolierte Chromiumtests für Editor/DOM bestanden; weitere gezielte Darstellungsprüfungen siehe Testbericht.
