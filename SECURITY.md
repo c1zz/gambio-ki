@@ -15,7 +15,7 @@ Eine Prüfsumme bestätigt die Übereinstimmung mit dem Vergleichswert. Werden P
 Der öffentliche Release-Workflow attestiert die **gesamte unveränderte PHP-Datei**, einschließlich eingebettetem Archiv. Die Signatur verwendet die kurzlebige GitHub-Actions-/Sigstore-Identität; kein privater Signaturschlüssel liegt im Repository. Das zugehörige Sigstore-Bundle gehört zu den Release-Assets.
 
 ```bash
-gh attestation verify c1zz-ai-install-0.12.6.php --repo c1zz/gambio-ki --signer-workflow c1zz/gambio-ki/.github/workflows/release.yml
+gh attestation verify c1zz-ai-install-0.12.7.php --repo c1zz/gambio-ki --signer-workflow c1zz/gambio-ki/.github/workflows/release.yml
 ```
 
 Repository, Workflow und Release-Tag/Commit im Prüfergebnis mit der erwarteten Veröffentlichung vergleichen. Die [GitHub-Anleitung](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations) beschreibt die Verifikation. Für die [Offline-Prüfung](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline) werden zusätzlich passende Vertrauensdaten benötigt.

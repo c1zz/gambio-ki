@@ -1,9 +1,13 @@
-# c1zz-ki 0.12.6-rc.1
+# c1zz-ki 0.12.7-rc.1
 
-Das KI-Modul verwendet das c1zz-systems-Logo und den gemeinsamen Admin-Stil für Dropdowns und Eingabefelder. Die Gestaltung ist mit Blog **0.48.15** abgestimmt. Die Anzeige des Modulstands kommt ohne den Zusatz „Teststand“ aus; diese Veröffentlichung bleibt ein Release Candidate.
+Automatisch gefundene Updates erscheinen jetzt direkt mit Paketdetails und Startknopf auf **Update / Aktualisieren**. Eine zweite manuelle Suche ist nicht mehr nötig. Veraltete Details werden bei aktiver Automatik nachgeladen; „Erneut nach Updates suchen“ bleibt verfügbar.
 
-Keine neue KI-Anbieterfunktion: Verbindungen, Entwürfe und gespeicherte Ideen bleiben erhalten. Geprüft wurden die exakten Paketdateien, frische Installation zusammen mit dem Blog, native Modulverwaltung, gemeinsame Eingabestile und Datenerhalt auf **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**. Es wurden keine externen KI-Anfragen ausgelöst. [Prüfumfang und Grenzen](docs/TESTSTAND.md).
+Das **c1zz-systems-Logo steht links und der Modultitel rechts außen in derselben Kopfzeile**, auch in schmalen Ansichten. Die Screenshots im Bilderrundgang wurden mit diesen Paketständen erneuert.
 
-Nach einer Sicherung **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** verwenden. Bei beiden Modulen zuerst den Blog aktualisieren. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. Ein separat geprüfter Herkunftsnachweis ersetzt kein unabhängiges Codeaudit.
+Die Installation startet weiterhin ausschließlich nach ausdrücklicher Bestätigung und Sicherungshinweis. Rechte, CSRF, Paketprüfung und Datenerhalt bleiben erhalten. Keine neue KI-Anbieterfunktion und keine externen KI-Anfragen bei den Tests.
 
-Abschlussprüfung: 22 native Prüfungen nach frischer Installation beider exakten Pakete, 48 Prüfungen beim abschließenden Blogupdate und 79 isolierte Chromiumtests für Editor/DOM bestanden; weitere gezielte Darstellungsprüfungen siehe Testbericht.
+Geprüft auf **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**: vollständige isolierte PHP-Suite, Cache-/Controller-/Sicherheitsprüfungen, PHP-Syntax, Buildertests, Chromium-Regression und frische Installation der exakten Pakete. Umfang und Grenzen stehen im verlinkten Testbericht.
+
+Für dieses Update im bisherigen Modul **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** verwenden und nach einer Sicherung selbst starten; zuerst den Blog aktualisieren. Die vereinfachte Bedienung greift nach Installation dieser Version. Die Shopfunktion prüft Integrität, noch keine kryptografische Herkunftssignatur. Der separate [Herkunftsnachweis](SECURITY.md) ersetzt kein unabhängiges Codeaudit.
+
+[Prüfumfang und Grenzen](docs/TESTSTAND.md).

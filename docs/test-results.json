@@ -9,19 +9,19 @@
   },
   "packages": {
     "c1zz/gambio-blog": {
-      "module_version": "0.48.15",
-      "tag": "v0.48.15-rc.1",
-      "installer": "c1zz-blog-install-0.48.15.php",
-      "sha256": "3a5f7781945f622023f7d1226a0e5854b55077a0be3273cb4337e086fc7055cb",
-      "bytes": 524848,
+      "module_version": "0.48.16",
+      "tag": "v0.48.16-rc.1",
+      "installer": "c1zz-blog-install-0.48.16.php",
+      "sha256": "2b653e42973bd21be0e2397fd9ecc9e706eeddd1cbcb591d203becda2afb23b6",
+      "bytes": 525872,
       "package_files": 188
     },
     "c1zz/gambio-ki": {
-      "module_version": "0.12.6",
-      "tag": "v0.12.6-rc.1",
-      "installer": "c1zz-ai-install-0.12.6.php",
-      "sha256": "3f645f73969f6a31c60a3f4254e56a67084b35232f2e07c9d95cf7e998b3728b",
-      "bytes": 158609,
+      "module_version": "0.12.7",
+      "tag": "v0.12.7-rc.1",
+      "installer": "c1zz-ai-install-0.12.7.php",
+      "sha256": "31db70cbe76cf4b96f109d94d2c2ae4d01173b7e01ecc2094ed206ec140f2483",
+      "bytes": 159577,
       "package_files": 45
     }
   },
@@ -29,44 +29,59 @@
     "passed": true,
     "checks": [
       "fresh native GX26 installation into dedicated DB before either module installation",
-      "fresh version: c1zzblog",
-      "fresh files match exact package: c1zzblog",
-      "fresh version: c1zzki",
-      "fresh files match exact package: c1zzki",
-      "empty categories use shared table",
-      "styled populated native table: C1zzBlogAdmin",
-      "native table actions styled: C1zzBlogAdmin",
-      "styled populated native table: C1zzBlogAdmin/Categories",
-      "native table actions styled: C1zzBlogAdmin/Categories",
-      "styled populated native table: C1zzBlogMedia",
-      "native table actions styled: C1zzBlogMedia",
-      "saved versions use preview buttons",
-      "KI admin loads with new version",
-      "public blog still available",
-      "fresh blog uses full available width",
-      "all responsive design values save and reload in fresh DB",
-      "public page uses saved overall width",
-      "public page uses independent mobile full width",
-      "normal reinstall preserves design values",
-      "public blog returns after normal reinstall",
-      "widget generator has no untranslated page-only sections"
+      "fresh exact version: c1zzblog",
+      "all fresh installed files verified: c1zzblog",
+      "native update page: c1zzblog",
+      "logo and heading share row: c1zzblog",
+      "optional manual update check retained: c1zzblog",
+      "no installation without available candidate: c1zzblog",
+      "fresh exact version: c1zzki",
+      "all fresh installed files verified: c1zzki",
+      "native update page: c1zzki",
+      "logo and heading share row: c1zzki",
+      "optional manual update check retained: c1zzki",
+      "no installation without available candidate: c1zzki",
+      "native common heading: C1zzBlogAdmin",
+      "native common heading: C1zzBlogAdmin/Categories",
+      "native common heading: C1zzBlogSettings",
+      "fresh public example blog available",
+      "native Chromium screenshots: release-screenshots.cjs",
+      "native Chromium screenshots: ai-release-screenshots.cjs"
     ],
-    "count": 22,
-    "exact_embedded_packages": true,
-    "entry": "native module preparation; root installer update checked separately",
-    "temporary_database_removed": true
+    "cleanup": {
+      "original_database_unchanged": true,
+      "original_media_unchanged": true,
+      "original_configuration_unchanged": true,
+      "main_shop_files_unchanged": true,
+      "audit_database_removed": true
+    }
   },
   "native_update": {
-    "passed": true,
-    "count": 48,
+    "success": true,
+    "packages": {
+      "blog": {
+        "version": "0.48.16",
+        "installer_sha256": "2b653e42973bd21be0e2397fd9ecc9e706eeddd1cbcb591d203becda2afb23b6",
+        "bytes": 525872
+      },
+      "ki": {
+        "version": "0.12.7",
+        "installer_sha256": "31db70cbe76cf4b96f109d94d2c2ae4d01173b7e01ecc2094ed206ec140f2483",
+        "bytes": 159577
+      }
+    },
     "checks": [
-      "isolated blog width browser checks passed",
-      "new local blog package version",
+      "fresh exact-package native and screenshot checks passed",
+      "new blog package matches fresh test",
       "installed baseline unchanged: c1zzblog",
       "installed baseline unchanged: c1zzki",
       "blog installer checksum",
       "blog installer removed after verification",
       "blog all installed files match exact package",
+      "ki installer checksum",
+      "KI native root form",
+      "ki installer removed after verification",
+      "ki all installed files match exact package",
       "blog native completion marker",
       "KI version and heading",
       "one accessible native logo: C1zzBlogAdmin",
@@ -108,34 +123,23 @@
       "media unchanged",
       "configuration and credential file unchanged",
       "main shop files unchanged"
-    ]
+    ],
+    "checks_count": 52
   },
-  "regression": {
-    "isolated_php_suite": "passed as unprivileged user",
-    "php_js_syntax": "passed",
-    "builder_tests": 2,
-    "editor_dom_chromium_checks": 79,
-    "widgets_address_checks": 1051
-  },
-  "targeted_browser_checks": {
-    "blog_width_isolated": 48,
-    "blog_width_native": 25,
-    "category_search_isolated": 34,
-    "category_search_native": 13,
-    "search_design_isolated": 36,
-    "search_design_native": 19
+  "isolated": {
+    "full_php_suite": true,
+    "notice_checks": 62,
+    "page_checks": 30,
+    "permissions_checks": 58,
+    "updater_checks": 89,
+    "builder_checks": 2,
+    "chromium_editor_checks": 79,
+    "syntax": true
   },
   "limits": [
-    "Targeted browser tests cover the corresponding development packages; the final widget fix does not change those layouts.",
-    "No repeated full GitHub update or destructive purge test.",
-    "No new theme/version compatibility claims or external AI requests.",
-    "No independent security audit."
-  ],
-  "preservation": {
-    "original_database_unchanged": true,
-    "original_media_unchanged": true,
-    "original_configuration_unchanged": true,
-    "main_shop_files_unchanged": true
-  },
-  "private_source_commit": "067e75b"
+    "No new full GitHub updater end-to-end run or destructive purge",
+    "No external AI requests; screenshot credentials/results synthetic",
+    "Only GX26.11.0/PHP8.2/Malibu rechecked",
+    "Shop checks integrity, not cryptographic provenance"
+  ]
 }
