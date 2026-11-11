@@ -29,3 +29,7 @@ Die native Updatefunktion verwendet feste öffentliche GitHub-Endpunkte über HT
 ## Sicherheitslücke melden
 
 Sicherheitsprobleme über [GitHubs private Meldung](https://github.com/c1zz/gambio-ki/security/advisories/new) melden. Keine API-Schlüssel, Sitzungstokens oder Shopzugangsdaten in öffentliche Issues einfügen. Prüfumfang und bekannte Grenzen stehen im Testbericht; ein unabhängiger Penetrationstest wurde nicht durchgeführt.
+
+## Zurückgezogene Testreleases
+
+Ältere Releases wurden aus dem Download- und Updateangebot entfernt. [Versionshistorie und dokumentierte sicherheitsrelevante Korrekturen](docs/HISTORIE.md) bleiben nachvollziehbar; die Entfernung eines Releases löscht keine bereits heruntergeladenen Kopien.

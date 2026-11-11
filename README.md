@@ -1,5 +1,7 @@
 # c1zz-ki für Gambio
 
+**Release-Angebot:** Nur die aktuelle geprüfte Testversion wird zum Download angeboten. [Ältere Versionen und dokumentierte Korrekturen](docs/HISTORIE.md).
+
 Aktuell: Kürzerer Menülink „c1zz-ki“ und Versionsanzeige ohne den Zusatz „Teststand“. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
 **Testrelease 0.12.3-rc.1 · Modulstand 0.12.3 · separat installierbare Erweiterung**

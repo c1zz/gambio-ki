@@ -1,0 +1,267 @@
+{
+  "repository": "c1zz/gambio-ki",
+  "retired_on": "2026-11-11",
+  "reason": "Only the current tested release is offered during this test phase; not all older releases had severe defects.",
+  "current_release": "v0.12.3-rc.1",
+  "tags_and_commits_preserved": true,
+  "historical_notes_not_current_installation_instructions": true,
+  "retired_releases": [
+    {
+      "tag": "v0.12.2-rc.1",
+      "title": "c1zz-ki für Gambio · 0.12.2-rc.1",
+      "published_at": "2026-11-11T09:58:27Z",
+      "body": "# c1zz-ki 0.12.2-rc.1\n\nDer Admin-Menülink heißt jetzt **c1zz-ki**. Hinter der Versionsnummer im Modulkopf entfällt der Zusatz **Teststand**. Diese Veröffentlichung bleibt ein Release Candidate; die Kennzeichnung und Prüfgrenzen sind weiterhin in den Releaseinformationen sichtbar.\n\nDas exakte eingebettete Paket wurde zusammen mit Blog 0.48.0 frisch auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` installiert. Version, Modulkopf und Menüdefinition wurden geprüft. Anschließend wurde der bestehende lokale Migrationstestshop mit dem exakten Root-Installer von 0.12.1 auf 0.12.2 aktualisiert; gespeicherte KI-Daten und die Konfiguration blieben erhalten. [Prüfumfang und Grenzen](docs/TESTSTAND.md).\n\nUnter **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** das Update nach einer Sicherung selbst starten. Keine Änderung an KI-Anbieteraufrufen oder Datenlöschung; keine neuen externen KI-Aufrufe, keine erneute vollständige GitHub-Update- oder Deinstallationsprüfung. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. Kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.12.2.php",
+          "bytes": 155593,
+          "digest": "sha256:b2973c8a389a15d3dfd98ff25957b9a6195ca124950aea3f6241196334b4bf31"
+        },
+        {
+          "name": "c1zz-ai-install-0.12.2.php.sigstore.json",
+          "bytes": 10854,
+          "digest": "sha256:eb56a5bb7f58cd089967d03bec84c60cde566494cbd5ffaf08ae51a508d8c436"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:fc0348ce09a4ff30d51bf19b4ef0c6ebfc00c164fd808e577f04f26c4772aaf2"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:345466cd02cf903b71f4a2dc88111b401eb017de05f404f889245daf9a5fb12a"
+        }
+      ]
+    },
+    {
+      "tag": "v0.12.1-rc.1",
+      "title": "c1zz-ki für Gambio · 0.12.1-rc.1",
+      "published_at": "2026-11-10T17:50:28Z",
+      "body": "# c1zz-ki 0.12.1-rc.1\n\nDer Deinstallationsdialog bietet jetzt eine **standardmäßig ausgeschaltete rote Checkbox** für die vollständige KI-Datenlöschung. Erst nach deiner ausdrücklichen Bestätigung werden auch gespeicherte Themenvorschläge und KI-Update-Einstellungen dauerhaft entfernt. Bereits übernommene Blogartikel und Kategorien bleiben erhalten.\n\nOhne Haken bleibt die Ideenhistorie wie bisher für eine Wiederinstallation erhalten. KI-Zugänge werden bei jeder Deinstallation entfernt. Nach Deaktivierung lässt sich die vollständige Bereinigung weiterhin über **Verbliebene KI-Daten entfernen** öffnen. Unterbrochene Löschschritte können fortgesetzt werden; Dateien und Datenbankstruktur sind nicht atomar löschbar.\n\nDer vollständige Datenbankvergleich mit Blog **0.47.2** und der Browserlauf sind bestanden. Nach bestätigter vollständiger Löschung bleiben keine eigenen Modultabellen oder Update-Einstellungen zurück. Gambios inaktive Modulmarker, Sprachcache, fortgeschrittene Zähler und die Moduldateien bleiben bestehen. [Prüfumfang und Grenzen](docs/TESTSTAND.md).\n\nZum Testen **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** öffnen und nach einer Sicherung **Jetzt aktualisieren** wählen. Ein Update löscht keine gespeicherten Inhalte. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit; der Shop prüft weiterhin keine kryptografische Herkunftssignatur.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.12.1.php",
+          "bytes": 155005,
+          "digest": "sha256:7a0358ace064b33ad4d3e6604d3402b211e9f03d2d139d2c3dd49307722f34ce"
+        },
+        {
+          "name": "c1zz-ai-install-0.12.1.php.sigstore.json",
+          "bytes": 10615,
+          "digest": "sha256:dfc7f64ada6f0c0b6c19507b45beb0ed574c075378c06813645ff3cc77168de6"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:b095b14ad8cfddbdd6a6f47f355806bb9e8072558bb4931d7225f881d64ba54f"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:92c247e4d393bcdc66d6cc5a30b13aa07986cf0562499eda6e7398b38192c8d4"
+        }
+      ]
+    },
+    {
+      "tag": "v0.12.0-rc.1",
+      "title": "c1zz-ki für Gambio · 0.12.0-rc.1",
+      "published_at": "2026-11-10T12:05:36Z",
+      "body": "# c1zz-ki 0.12.0-rc.1\n\nNach der Adminanmeldung prüft das Modul im Hintergrund auf neue Versionen und zeigt einen kleinen Hinweis direkt am Gambio-Menülink. Ein bestätigtes Update erhält eine „1“, eine fehlgeschlagene Prüfung ein „!“. Der Badge öffnet **Update / Aktualisieren**; ein Update startet weiterhin ausschließlich nach deiner Bestätigung.\n\nDie automatische Prüfung ist standardmäßig aktiv und abschaltbar. Ergebnisse werden je Modul und installiertem Stand für sechs Stunden zwischengespeichert; bei Fehlern erfolgt frühestens nach 15 Minuten ein neuer Versuch. Die Auswahl für Testversionen wird gespeichert und ist standardmäßig ausgeschaltet. „Nach Updates suchen“ prüft sofort. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kundendaten oder Zugangsschlüssel.\n\nAbgeschlossene Updates erscheinen kompakt mit aufklappbaren Details. Laufende oder fehlgeschlagene Abläufe bleiben deutlich sichtbar. Der Deinstallationsbereich hat einen klaren Abstand zu den normalen Aktionen.\n\n## Selbst aktualisieren\n\nVon 0.11.1 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Erstinstallation und Wiederherstellung bleiben über den Root-Installer möglich. Die neuen automatischen Hinweise stehen nach Installation dieses Updates zur Verfügung.\n\nPrüfumfang und Grenzen: [Teststand](docs/TESTSTAND.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.12.0.php",
+          "bytes": 152845,
+          "digest": "sha256:1691b16107935cec894ae69851fe317130b0532604c46bde799a525d40dc1b30"
+        },
+        {
+          "name": "c1zz-ai-install-0.12.0.php.sigstore.json",
+          "bytes": 10627,
+          "digest": "sha256:a9bcb43d77f9a4823a02451750f089b5a9d63eb614404794af03d0f48eafb225"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:4ccc44582b9b4aa156e54eb60c97b7e5d23edccd61c90ba7bcb811a88fe01941"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:fcf240c2e84d2e8f6bacfc3d7d35473c8c7c24fb5d5ba1f9b5a342ff83934035"
+        }
+      ]
+    },
+    {
+      "tag": "v0.11.1-rc.1",
+      "title": "c1zz-ki für Gambio · 0.11.1-rc.1",
+      "published_at": "2026-11-10T11:08:38Z",
+      "body": "# c1zz-ki 0.11.1-rc.1\n\nDie Update-Seite zeigt jetzt die installierte Version und einen deutlichen Versionsstatus: noch nicht geprüft, aktuell für die geprüfte Auswahl, Update verfügbar oder Prüfung nicht bestätigt. Die letzte erfolgreiche Prüfung und die Berücksichtigung von Testversionen bleiben nachvollziehbar. Ergebnisse gelten höchstens 30 Minuten und für den geprüften Paketstand; bloßes Öffnen der Seite fragt GitHub weiterhin nicht ab.\n\n## Selbst über die Modulverwaltung aktualisieren\n\nVon KI 0.11.0 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Der Root-Installer bleibt für Erstinstallation und Wiederherstellung verfügbar.\n\nPrüfung mit Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu: siehe [Teststand](docs/TESTSTAND.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.11.1.php",
+          "bytes": 143497,
+          "digest": "sha256:54833b8987efae385327f9047f8a9fa135c609c3aae5908c6c03fa58f265aa91"
+        },
+        {
+          "name": "c1zz-ai-install-0.11.1.php.sigstore.json",
+          "bytes": 10756,
+          "digest": "sha256:63314fe748ca9a1b3da6ea5fe79356911934fa7e9f98155c136c399619799d1f"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:e78d97c1868d110cd6ea0936d8d2d3e078df920aeef5c754fb5f997ccba3c58b"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:e366412ad535ace65c54b0c225d6a347d84bbcf5b91adf55ce58ba01137c5e1b"
+        }
+      ]
+    },
+    {
+      "tag": "v0.11.0-rc.1",
+      "title": "c1zz-ki für Gambio · 0.11.0-rc.1",
+      "published_at": "2026-11-10T10:47:50Z",
+      "body": "# c1zz-ki 0.11.0-rc.1\n\nNach der Erstinstallation können neue Modulversionen direkt unter **Update / Aktualisieren** aus GitHub bezogen werden. Das erneute Kopieren einer PHP-Datei in den Shop-Root entfällt. Für den einmaligen Wechsel von älteren Ständen ohne Updatefunktion wird weiterhin der neue Root-Installer benötigt.\n\n- Nach Updates suchen, Änderungen lesen, Sicherung bestätigen und ausdrücklich starten. Testversionen erscheinen nur nach bewusster Auswahl.\n- HTTPS, feste GitHub-Quelle, GitHub-Asset-Prüfsumme, Paketinhalt und installierte Dateien prüfen. Heruntergeladene Installer werden nur als Datencontainer gelesen, nicht ausgeführt.\n- Fortschritt bleibt bei Fehlern erhalten; eine neue Anmeldung kann den Lauf fortsetzen. Wiederholte erfolgreiche Schritte werden nicht erneut ausgeführt.\n- Artikel, Medien, Einstellungen und KI-Zugänge erhalten. Lokale Moduländerungen und gleichzeitige c1zz-Updates blockieren die Übernahme.\n- Erfolgreiche Wiederherstellung über den Root-Installer schließt unterbrochene Updatejournale ab. Kein automatisches Zurückrollen von Datenbankänderungen.\n- Vertrauen vor Installation und hilfreiche Inhalte zur Unterstützung von Kaufentscheidungen als Produktleitlinien dokumentiert.\n\nGeprüft in einem frischen **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu**: 39 native Ablaufprüfungen und 6 Chromiumprüfungen; 89 isolierte Updaterfälle und 42 isolierte Rechte-/CSRF-Prüfungen. Die vorhandenen isolierten Modul-, Builder- und Chromiumregressionen bestehen ebenfalls. GitHub-Antworten im frischen Shop waren simuliert; das Zielpaket entspricht exakt diesem Installer. Details: [Teststand](docs/TESTSTAND.md).\n\nDer öffentliche Release-Workflow erstellt einen Herkunftsnachweis für die vollständige Installerdatei. **Im Shop wird diese Signatur noch nicht kryptografisch geprüft**; dort gelten HTTPS-Quellen- und Integritätsprüfungen. Ein unabhängiger Penetrationstest liegt nicht vor. Keine neue Freigabe für weitere Gambio-, PHP- oder Theme-Versionen.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.11.0.php",
+          "bytes": 142433,
+          "digest": "sha256:8dc4b0ad6ff86542547edc7a68331efc133af336c4215c7bec1cc210e31013f6"
+        },
+        {
+          "name": "c1zz-ai-install-0.11.0.php.sigstore.json",
+          "bytes": 10721,
+          "digest": "sha256:4a5e3095fdfd3671b13c319066162c6f42efc59829864484b3c1377a5d53a364"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:6969ae6928ac836a6dcc5051e19b8a5ad3056e5d00d71e5a109606f951d7d8ff"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:c6e87573ae0556eb698a96f0e0906ca600e8d2136c5c3df536a04a253131b84c"
+        }
+      ]
+    },
+    {
+      "tag": "v0.10.0-rc.1",
+      "title": "c1zz-ki für Gambio · 0.10.0-rc.1",
+      "published_at": "2026-11-10T09:59:05Z",
+      "body": "# c1zz-ki für Gambio · 0.10.0-rc.1\n\nDieses Update behebt die Befunde des lokalen Audits und passt die Verwaltung an den gemeinsamen c1zz-Stil an.\n\n- Das Schlüsselformular verwendet einen Feldnamen, den Gambios native Diagnose bereits vor dem Aufruf des Modulcontrollers maskiert. Schlüssel werden weiterhin nicht an den Browser zurückgegeben.\n- Fehlgeschlagene Verbindungsprüfungen und andere Fehler erscheinen als rote Fehlermeldungen. Nicht eingerichtete Anbieter erhalten eine neutrale Darstellung.\n- Eigenes Menüicon und gemeinsame Gestaltung mit dem Blogmodul.\n- Die Bildhilfe bestätigt zuerst das Kopieren, bevor sie den Anbieter öffnet. Bei gesperrter Zwischenablage bleibt ein manueller Kopierweg verfügbar.\n- Der Modulordner heißt jetzt `GXModules/c1zz/c1zzki`. Der Installer übernimmt `BlogAI`; unbekannte Dateien, Symlinks und doppelte Ordner blockieren die Übernahme.\n\n**Zuerst Blog 0.45.0 installieren oder aktualisieren, danach KI 0.10.0.** Vorhandene Zugänge, geprüfte Verbindungszustände, Bereichseinstellungen und Themenideen bleiben beim Update erhalten. Keine automatischen Anbieteraufrufe beim Update.\n\nNur `c1zz-ai-install-0.10.0.php` in den Shopordner hochladen und den geführten Ablauf ausführen. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand](docs/TESTSTAND.md).\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.10.0.php",
+          "bytes": 115657,
+          "digest": "sha256:32fb51f3a332f2da3da8e178a1c28ab5061eafd66d066a110b9114d7e12888fb"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:48c0f7521f80ef6f834e86954bc88b881f43c01303545ec4c4d48cd1566ecab6"
+        }
+      ]
+    },
+    {
+      "tag": "v0.9.0-rc.1",
+      "title": "c1zz-ki für Gambio · 0.9.0-rc.1",
+      "published_at": "2026-11-09T16:49:45Z",
+      "body": "# c1zz-ki für Gambio · 0.9.0-rc.1\n\nBlogbilder mit dem Browserkonto erstellen: Im Artikeleditor öffnet „Bild beim Anbieter erstellen“ eine bearbeitbare Bildbeschreibung aus Titel, Kurzbeschreibung und Kategorie.\n\n- ChatGPT und Google Gemini werden bei erfolgreich geprüftem API-Zugang und aktiviertem Blogbereich angeboten.\n- Illustration, Foto oder minimalistische Grafik wählen; Beschreibung und weitere Artikelauszüge selbst ergänzen.\n- „Beschreibung kopieren & Anbieter öffnen“ öffnet die Anbieter-Webseite in einem getrennten Tab. Dort anmelden, Text einfügen, Bild erstellen und herunterladen; anschließend den bestehenden Blog-Bildupload nutzen.\n- Keine Bild-API-Anfrage aus dem Modul. Browserkonto, Tarif und Limits gelten separat; API-Schlüssel melden nicht im Browser an.\n- Bei blockierter Zwischenablage manuell kopieren, bei blockiertem Popup den Anbieterlink verwenden. Artikel und Medien bleiben unverändert; kein automatischer Import.\n- Entwürfe, Vorschlagsverlauf und Anbieterzugänge bleiben beim Update erhalten.\n\nDie Bilderstellung über diesen Browserweg wurde vom Nutzer bestätigt. Automatisierte Prüfungen simulieren Kopieren und Tabs; sie erzeugen keine Bilder beim Anbieter.\n\nModulstand und Installer: **0.9.0**. Voraussetzung: aktives c1zz-blog ab 0.42.0; gemeinsam geprüft mit **0.44.0**. Nur `c1zz-ai-install-0.9.0.php` hochladen und ohne vorherige Deinstallation aktualisieren. [Installation](docs/INSTALLATION.md) · [Teststand](docs/TESTSTAND.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.9.0.php",
+          "bytes": 111811,
+          "digest": "sha256:77a25c3dc5a5dccbc2afbbe115af70c544ca1bf202f14315605e88ad6af5b14c"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 92,
+          "digest": "sha256:0ea1ae0167ed228ea87890a968cb59e9b12471f2d45289807b72a78a2f6d0131"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.3-rc.1",
+      "title": "c1zz-ki für Gambio · 0.8.3-rc.1",
+      "published_at": "2026-11-09T15:29:26Z",
+      "body": "# c1zz-ki für Gambio · 0.8.3-rc.1\n\nGespeicherte Themenvorschläge sind jetzt als kompakte redaktionelle Liste aufgebaut. Der Wechsel im Dropdown lädt den gewählten Vorschlagssatz direkt, ohne zusätzlichen Button und ohne neuen KI-Aufruf.\n\n- Titel, Kategorie und Kurzbeschreibung sofort sichtbar; vollständige Gliederung aufklappbar.\n- „Als Thema übernehmen“ überträgt Titel und Gliederung in die Entwurfserstellung.\n- Kategorievorschläge als kurze Zeilen; schmale Ansichten verwenden weiterhin die normale Seitenscrollung.\n- Ohne JavaScript bleibt der manuelle Öffnen-Button verfügbar.\n- Gespeicherte Vorschläge, Blogartikel und Anbieterzugänge bleiben beim Update erhalten.\n\nInterner Modulstand und Installer: **0.8.3**. Voraussetzung: aktives c1zz-blog ab 0.42.0; für den gemeinsamen Stil wird 0.43.0 empfohlen. Nur `c1zz-ai-install-0.8.3.php` hochladen. Das Blogmodul benötigt für diese Änderung kein Update.\n\nPrüfungen und tatsächliche Grenzen: [Teststand](docs/TESTSTAND.md). Die Releaseprüfung löst keine echten KI-Anfragen aus. Anbieterfunktionen bleiben unverändert; Anthropic wurde weiterhin nur mit simulierten Antworten geprüft.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.8.3.php",
+          "bytes": 106583,
+          "digest": "sha256:595e49616c757202e6ed184c10bcc694a3402f1c3b5ef23c955dc071a7b83df9"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 92,
+          "digest": "sha256:baabfe36f144a29eca489bd1bacd37488df6bcf9c17c985e0c1502a5a5dfed25"
+        }
+      ]
+    },
+    {
+      "tag": "v0.8.2-rc.1",
+      "title": "c1zz-ki für Gambio · 0.8.2-rc.1",
+      "published_at": "2026-11-09T15:03:32Z",
+      "body": "# c1zz-ki für Gambio · 0.8.2-rc.1\n\nErstes veröffentlichtes Testrelease des separaten KI-Zusatzmoduls. Interner Modulstand und Installerdateiname: **0.8.2**.\n\n- Kompakte Einstellungen mit grünem Prüfstatus und gemeinsamem c1zz-systems-Stil. Rote Entfernen-Aktionen.\n- Anbieterzugänge für OpenAI, Anthropic und Google Gemini; verschlüsselte API-Schlüssel und Modelllistentest.\n- Kleine Standardmodelle, bewusster Start jeder Anfrage und klare Rückmeldung während der Erstellung.\n- Blogassistent im gesamten Inhaltsbereich unter der bestehenden Modulnavigation.\n- Neue bearbeitbare Entwürfe und Themenideen auf Grundlage bewusst ausgewählter Blog- und Shopangaben.\n- Dauerhaft gespeicherte Vorschläge je Admin, auch nach Neuladen und erneuter Anmeldung.\n- Native Gambio-Rechte und Formularschutz; getrennte Installation und Deinstallation.\n\nGemini-Entwürfe sowie Themenideen, Verlauf nach Neuladen und Übernahme in einen Entwurf wurden am 09.11.2026 vom Nutzer mit seinem echten Zugang bestätigt. OpenAI ist ebenfalls mit echten Aufrufen bestätigt; Anthropic bislang simuliert. Automatisierte Ergebnisse und Grenzen stehen im [Teststand](docs/TESTSTAND.md).\n\nGemini ist nur innerhalb eines verfügbaren Free-Tier-Kontingents kostenlos. Bei aktivierter Abrechnung können Kosten entstehen. Keine Bilderzeugung, keine Webrecherche, keine Anmeldung über ein Chat-Abonnement.\n\nVoraussetzung: aktives c1zz-blog ab 0.42.0. Vor Installation oder Update sichern. Nur `c1zz-ai-install-0.8.2.php` hochladen; kein separates ZIP. Das Blogrelease und die Entwicklungsdateien sind nicht Bestandteil dieses Pakets.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.8.2.php",
+          "bytes": 105943,
+          "digest": "sha256:f66e8bcf84df97c964acf99a95aa87e162aa16347e9ff71af4df5f30bdebc95e"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 92,
+          "digest": "sha256:6a5e4755a727482e057c1c012ea288150d8484070bf815ef7dc92a71e4936ebe"
+        }
+      ]
+    }
+  ]
+}
