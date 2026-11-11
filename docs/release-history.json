@@ -2,10 +2,43 @@
   "repository": "c1zz/gambio-ki",
   "retired_on": "2026-11-11",
   "reason": "Only the current tested release is offered during this test phase; not all older releases had severe defects.",
-  "current_release": "v0.12.3-rc.1",
+  "current_release": "v0.12.6-rc.1",
   "tags_and_commits_preserved": true,
   "historical_notes_not_current_installation_instructions": true,
   "retired_releases": [
+    {
+      "tag": "v0.12.3-rc.1",
+      "title": "c1zz-ki für Gambio · 0.12.3-rc.1",
+      "published_at": "2026-11-11T12:57:24Z",
+      "body": "# c1zz-ki 0.12.3-rc.1\n\nDer **gemeinsame c1zz-Admin-Stil** ist mit Blog 0.48.4 synchronisiert und enthält jetzt gezielte Regeln für Modultabellen. Im KI-Modul entstehen dadurch keine neuen Listen oder Funktionen. KI-Anbieteraufrufe und gespeicherte Inhalte bleiben unverändert.\n\nDie exakten Pakete wurden zusammen auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** frisch installiert und anschließend im lokalen Migrationstestshop aktualisiert. 15 fokussierte native Prüfungen, 35 Update-/Datenerhaltprüfungen sowie 34 Browserprüfungen der aktualisierten Modulverwaltung bestanden. Die KI-Prüfung umfasst Paketdateien, Version, Adminaufruf, gemeinsamen Stil und Datenerhalt; es wurden keine externen KI-Anfragen ausgelöst. [Prüfumfang und Grenzen](docs/TESTSTAND.md).\n\nUnter **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** das Update nach einer Sicherung selbst starten. Kein erneuter vollständiger GitHub-Update- oder Deinstallationslauf. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. Kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-ai-install-0.12.3.php",
+          "bytes": 156089,
+          "digest": "sha256:e2e9a4d473f7c814f7d03379b1b74c2e5a1702f78b7657a3d36332d1c56e3b86"
+        },
+        {
+          "name": "c1zz-ai-install-0.12.3.php.sigstore.json",
+          "bytes": 11003,
+          "digest": "sha256:6c3a8591214a95ed1dc3f649b0ea57acd6802953a8743244aa4c0d12c980ed9d"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 578,
+          "digest": "sha256:7b5f3aab1e055a239fb769a840b7f809807a36378793fa3310332374fb70c1dd"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 93,
+          "digest": "sha256:7a91a70aeca9fc952d656bfa8687943bda2ba911734502e645cf9363735ddc60"
+        }
+      ]
+    },
     {
       "tag": "v0.12.2-rc.1",
       "title": "c1zz-ki für Gambio · 0.12.2-rc.1",
