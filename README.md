@@ -12,7 +12,7 @@ Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambi
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
-Die bisherigen Funktionsansichten wurden am **10.11.2026 mit KI 0.11.1 und Blog 0.46.1** erneuert. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
+Alle sieben Funktionsansichten wurden am **11.11.2026 mit KI 0.12.6 und Blog 0.48.15** neu aufgenommen. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
 
 ## Vertrauen vor Installation
 

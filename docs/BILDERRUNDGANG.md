@@ -1,8 +1,8 @@
 # c1zz-ki für Gambio – Bilderrundgang
 
-**0.12.6-rc.1 · Modulstand 0.11.1 · Blog 0.46.1**
+**0.12.6-rc.1 · Modulstand 0.12.6 · Blog 0.48.15**
 
-Alle Abbildungen wurden am 10.11.2026 neu aufgenommen. Sieben Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
+Alle Abbildungen wurden am 11.11.2026 neu aufgenommen. Sieben Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
 
 ## 1. Bereiche und Anbieter verwalten
 
@@ -46,6 +46,6 @@ Die Updateverwaltung zeigt die installierte Version, den letzten Prüfstatus und
 
 [![KI-Versionsstatus und Einstellungen für automatische Updatehinweise](images/aktualisieren.png)](images/aktualisieren.png)
 
-Die Aufnahme **Update / Aktualisieren** wurde mit KI **0.12.0** erneuert. Sie zeigt den reproduzierbar gesetzten Cachezustand „aktuell“, die automatische Prüfung und die gespeicherte Testversionsauswahl; kein Update wurde dafür gestartet. Die übrigen Ansichten bleiben auf dem oben genannten Bildstand.
+Die Aufnahme **Update / Aktualisieren** zeigt mit KI **0.12.6** den vorhandenen Prüfstatus und den abgeschlossenen Updateablauf. Für die Aufnahme wurde weder erneut gesucht noch ein Update gestartet.
 
-Die Aufnahmen zeigen den ausdrücklich genannten älteren Modulstand. Neue Logo-, Eingabe- und Layoutoptionen dieses Releases sind in den [Release Notes](../RELEASE_NOTES.md) beschrieben.
+Alle sieben Aufnahmen zeigen den veröffentlichten Modulstand 0.12.6 zusammen mit Blog 0.48.15. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).

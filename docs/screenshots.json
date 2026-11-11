@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-11",
+  "module": "ki",
+  "module_version": "0.12.6",
+  "blog_version": "0.48.15",
+  "ai_version": "0.12.6",
+  "gambio": "26.11.0",
+  "theme": "Malibu",
+  "capture": "Native local Chromium screenshots of installed published releases; illustrative AI texts only in browser DOM",
+  "saved_content_or_settings_changed": false,
+  "provider_requests": 0,
+  "update_started": false,
+  "release_installers_changed": false,
+  "screenshots": [
+    {
+      "file": "docs/images/aktualisieren.png",
+      "module_version": "0.12.6",
+      "sha256": "78df5e169808e4f861ae696271ef28520dae75b655670a1c7edcb5332a842a4f",
+      "width": 1440,
+      "height": 1200,
+      "description": "Versionsstatus und Updates direkt im KI-Modul"
+    },
+    {
+      "file": "docs/images/blogbild-browser.png",
+      "module_version": "0.12.6",
+      "sha256": "c5556d030d95b9af20a1f6da100231dc277ef34d9cd496be251eca59b7633045",
+      "width": 862,
+      "height": 594,
+      "description": "Bildbeschreibung, Stilwahl und Browseranbieter direkt beim Titelbild"
+    },
+    {
+      "file": "docs/images/blogentwurf.png",
+      "module_version": "0.12.6",
+      "sha256": "d0658522d7efe0cd4b14779c6e7bcf20edac82b7bd99d610311bc8110fa982fa",
+      "width": 1440,
+      "height": 1200,
+      "description": "KI-Assistent unter der Blognavigation: Modell, Auftrag und neuer Entwurf"
+    },
+    {
+      "file": "docs/images/gemini-zugang.png",
+      "module_version": "0.12.6",
+      "sha256": "8b3ae6354cd3932d5eeed3f958dafb0ecb7ed17af0b753dc5f2eeb3b736d6f95",
+      "width": 900,
+      "height": 504,
+      "description": "Gemini: Schlüsselverwaltung, Modelltest und Free-Tier-Hinweis"
+    },
+    {
+      "file": "docs/images/gespeicherte-ideen.png",
+      "module_version": "0.12.6",
+      "sha256": "a546558e159b4fdf99d59fb9292dd28b619bef2638ce168640d7f2b3b9b5944b",
+      "width": 1440,
+      "height": 1200,
+      "description": "Gespeicherte Vorschläge mit Übernahme in einen Entwurf"
+    },
+    {
+      "file": "docs/images/ki-zugaenge.png",
+      "module_version": "0.12.6",
+      "sha256": "b3619e5f14d24cc80a65a5cac77ac2150db0f22f3370cb4ecab65780a676982f",
+      "width": 1440,
+      "height": 1200,
+      "description": "KI-Modul: aktive Bereiche und Anbieterzugänge"
+    },
+    {
+      "file": "docs/images/themenquellen.png",
+      "module_version": "0.12.6",
+      "sha256": "ef2f6fa5f3fa9fd902429da5e5055700b275c2e05a28984429c8621cdc1627fb",
+      "width": 1155,
+      "height": 947,
+      "description": "Themenideen: Gemini und bewusst ausgewählte Shop- oder Bloginhalte"
+    }
+  ]
+}
