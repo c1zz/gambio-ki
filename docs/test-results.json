@@ -1,226 +1,140 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "versions": {
-    "blog": "0.47.2",
-    "ki": "0.12.1"
+    "blog": "0.48.0",
+    "ki": "0.12.2"
   },
   "environment": {
     "gambio": "26.11.0",
     "php": "8.2.31",
     "database": "MariaDB 10.10",
     "theme": "Malibu",
-    "base": "/shop/"
+    "shop_path": "/shop/"
   },
-  "native": {
-    "completed": true,
-    "all_tables_compared": true,
-    "checkpoints": {
-      "installed": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 273,
-        "added_tables": {
-          "c1zz_ai_credentials": 1,
-          "c1zz_ai_features": 1,
-          "c1zz_ai_generations": 1,
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "ai_uninstalled": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 270,
-        "added_tables": {
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "normal_uninstall": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 270,
-        "added_tables": {
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "reinstalled": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 273,
-        "added_tables": {
-          "c1zz_ai_credentials": 0,
-          "c1zz_ai_features": 1,
-          "c1zz_ai_generations": 1,
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "blog_full_purge": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 259,
-        "added_tables": {},
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 795,
-            "added_rows": 2,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      }
-    },
-    "checks": [
-      "fresh native GX26 installation into dedicated DB before either module installation",
-      "KI credential file removed",
-      "normal uninstall preserves all seeded articles, versions, categories, routes and images",
-      "confirmed blog purge removes all blog tables/media and preserves foreign media",
-      "confirmed full AI purge removes history and all own tables; both update preferences removed"
-    ]
-  },
-  "browser": {
-    "success": true,
-    "checks": [
-      "full deletion defaults to unchecked",
-      "destructive option and action visibly red",
-      "deletion scope explained",
-      "confirmed AJAX deletion completes all native steps",
-      "confirmation locked after first accepted step",
-      "cleanup remains accessible after deactivation"
-    ],
-    "blocked_external_origins": []
-  },
-  "isolated": {
-    "php_suite": true,
-    "ai_purge_checks": 18,
-    "blog_purge_route_checks": 30,
-    "builder_checks": 2
-  },
+  "fresh_checks": [
+    "fresh native GX26 installation into dedicated DB before either module installation",
+    "blog embedded archive integrity",
+    "blog exact file list",
+    "ki embedded archive integrity",
+    "ki exact file list",
+    "KI installed version",
+    "KI heading suffix removed",
+    "short menu label: c1zz-blog",
+    "short menu label: c1zz-ki",
+    "native HTTP search responds successfully",
+    "published blog matches appear alongside product search",
+    "native product result retained",
+    "native HTTP search responds successfully",
+    "native HTTP search responds successfully",
+    "separate blog pagination covers all results",
+    "native HTTP search responds successfully",
+    "body/tag/Unicode search: Koerperfund",
+    "native HTTP search responds successfully",
+    "body/tag/Unicode search: Schlagwortfund",
+    "native HTTP search responds successfully",
+    "body/tag/Unicode search: ÖL Hanf",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Privatwort",
+    "non-public content excluded from live suggestions: Privatwort",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Papierkorbwort",
+    "non-public content excluded from live suggestions: Papierkorbwort",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Defektwort",
+    "non-public content excluded from live suggestions: Defektwort",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Historienwort",
+    "non-public content excluded from live suggestions: Historienwort",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Rohentwurfswort",
+    "non-public content excluded from live suggestions: Rohentwurfswort",
+    "native HTTP search responds successfully",
+    "non-public/non-matching content excluded: Suchprobe unmöglich",
+    "non-public content excluded from live suggestions: Suchprobe unmöglich",
+    "native HTTP search responds successfully",
+    "three blog suggestions plus all-results link",
+    "one native list keeps keyboard indices across products and blog",
+    "native product suggestion retained",
+    "native HTTP search responds successfully",
+    "live suggestions without matching products",
+    "native search settings save",
+    "native HTTP search responds successfully",
+    "configured result count honored",
+    "native HTTP search responds successfully",
+    "configured suggestion count honored",
+    "native HTTP search responds successfully",
+    "summary toggle honored",
+    "native search settings save",
+    "live toggle keeps native product suggestions",
+    "native search settings save",
+    "global search toggle retains native product search",
+    "native search settings save",
+    "search and settings preserve c1zz_blog_articles",
+    "search and settings preserve c1zz_blog_categories",
+    "search and settings preserve c1zz_blog_category_routes",
+    "search and settings preserve c1zz_blog_drafts",
+    "search and settings preserve c1zz_blog_imports",
+    "search and settings preserve c1zz_blog_revisions",
+    "search and settings preserve c1zz_blog_routes",
+    "search and settings preserve c1zz_blog_schedules",
+    "search and settings preserve c1zz_blog_trash",
+    "disabled module contributes no full search results",
+    "disabled module contributes no live results"
+  ],
+  "browser_checks": [
+    "search section appears in native presentation admin",
+    "saved search setting visible",
+    "native result count/390",
+    "result cards fit viewport/390",
+    "native result count/768",
+    "result cards fit viewport/768",
+    "native result count/1440",
+    "result cards fit viewport/1440",
+    "native live search widget available",
+    "native suggestions use a single keyboard list",
+    "native keyboard crosses product/blog suggestion 0",
+    "native keyboard crosses product/blog suggestion 1",
+    "native keyboard crosses product/blog suggestion 2",
+    "native keyboard crosses product/blog suggestion 3",
+    "native keyboard crosses product/blog suggestion 4",
+    "Enter opens the selected public blog article",
+    "Malibu native mobile suggestion visibility preserved",
+    "native mobile Enter finds blog-only matches",
+    "full search/pagination works without JavaScript"
+  ],
+  "update_checks": [
+    "blog installer checksum",
+    "blog installer removed after verification",
+    "blog all installed files match exact package",
+    "ki installer checksum",
+    "KI native root form",
+    "ki installer removed after verification",
+    "ki all installed files match exact package",
+    "blog native completion marker",
+    "KI version and heading",
+    "search appearance settings available",
+    "existing public migration content searchable",
+    "existing public content in native live suggestions",
+    "shop public route: /blog/",
+    "shop public route: /",
+    "content preserved: c1zz_ai_credentials",
+    "content preserved: c1zz_ai_features",
+    "content preserved: c1zz_ai_generations",
+    "content preserved: c1zz_ai_ideas",
+    "content preserved: c1zz_blog_articles",
+    "content preserved: c1zz_blog_categories",
+    "content preserved: c1zz_blog_category_routes",
+    "content preserved: c1zz_blog_drafts",
+    "content preserved: c1zz_blog_imports",
+    "content preserved: c1zz_blog_revisions",
+    "content preserved: c1zz_blog_routes",
+    "content preserved: c1zz_blog_schedules",
+    "content preserved: c1zz_blog_trash",
+    "presentation stored unchanged",
+    "media unchanged",
+    "configuration and credential file unchanged",
+    "main shop files unchanged"
+  ],
   "preservation": {
     "original_database_unchanged": true,
     "original_media_unchanged": true,
@@ -228,12 +142,26 @@
     "main_shop_files_unchanged": true,
     "audit_database_removed": true
   },
-  "scope": "Exact embedded package files; native module installation/deinstallation/reinstallation. No new root installer or live GitHub update test in this run.",
-  "package": {
-    "module_version": "0.12.1",
-    "installer": "c1zz-ai-install-0.12.1.php",
-    "sha256": "7a0358ace064b33ad4d3e6604d3402b211e9f03d2d139d2c3dd49307722f34ce",
-    "bytes": 155005,
-    "package_files": 44
-  }
+  "packages": {
+    "blog": {
+      "version": "0.48.0",
+      "installer_sha256": "5bb282e80b25b9eda9f92555458fb07142ac6bdbfd4340f2762290262a508921",
+      "bytes": 494624
+    },
+    "ki": {
+      "version": "0.12.2",
+      "installer_sha256": "b2973c8a389a15d3dfd98ff25957b9a6195ca124950aea3f6241196334b4bf31",
+      "bytes": 155593
+    }
+  },
+  "additional_checks": {
+    "isolated_search": 33,
+    "builder": 2,
+    "isolated_browser": 79
+  },
+  "limits": [
+    "No new complete GitHub updater or uninstall test",
+    "No external AI calls",
+    "Other themes/search providers and load not tested"
+  ]
 }

@@ -1,11 +1,15 @@
 # Teststand und Grenzen
 
-**Blog 0.47.2-rc.1 / KI 0.12.1-rc.1**, 10. November 2026.
+**KI 0.12.2-rc.1**, 11. November 2026.
 
-Im frischen **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` wurden die exakten eingebetteten Moduldateien beider Installer geprüft: Installation, normale Deinstallation, Wiederinstallation und vollständige Datenlöschung. Dabei wurden Struktur und Inhalt aller Datenbanktabellen verglichen. Der neue KI-Löschablauf wurde zusätzlich mit Chromium und echten Ajax-Schritten geprüft. Isolierte PHP-Regressionen, 18 KI-Löschschutzprüfungen, 30 Blog-Lösch-/Routingprüfungen und zwei Builderprüfungen bestanden.
+Die exakten eingebetteten Pakete wurden frisch auf **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` nativ installiert. 68 HTTP-/Datenprüfungen und 19 angemeldete Chromiumprüfungen bestanden: Suchtreffer und Vorschläge, Produktbestand, Ausschluss privater/alter/gelöschter Fassungen, Einstellungen speichern, Modul deaktivieren, native Tastaturbedienung, mobiles Enter, 390/768/1440 px und Ergebnisse ohne JavaScript. KI-Version, Modulkopf und Menüdefinition wurden ebenfalls geprüft.
 
-Nach vollständiger Löschung sind wieder alle **259 ursprünglichen Tabellen** vorhanden, ohne eigene Blog-/KI-Tabellen und ohne deren Update-Einstellungen. **Kein bytegleicher Datenbankzustand:** Gambios zwei inaktive Modulmarker, der neu aufgebaute Sprachcache und ein fortgeschrittener AUTO_INCREMENT-Zähler bleiben. Modulcode bleibt vorhanden. Keine ursprüngliche Tabellenstruktur oder sonstigen fachlichen Shopdaten wurden verändert.
+Danach wurden die exakten Root-Installer im bestehenden lokalen Migrationstestshop ausgeführt (Blog 0.47.4 → 0.48.0, KI 0.12.1 → 0.12.2). 31 Prüfungen bestätigen Abschluss, Installerentfernung, sämtliche Paketdateien und die Suche im vorhandenen Artikelbestand. Inhalte, Fassungen, Kategorien, Weiterleitungen, Medien, gespeicherte Darstellung, KI-Daten und Konfigurationsdateien bleiben erhalten. Der Haupttestshop erhielt kein Update.
 
-Die normale Deinstallation erhält Blogdaten, Bilder und KI-Ideen weiterhin; KI-Zugänge werden dabei entfernt. Die Löschtests verwenden ausschließlich künstliche Daten in einer getrennten Prüfdatenbank. Originaler Migrationsbestand und Haupttestshop bleiben unverändert. Prüfdatenbank, Prüfbenutzer und temporäre Dateikopien wurden entfernt.
+Die ursprüngliche Migrationsdatenbank, Medien und Konfiguration blieben während des frischen Prüflaufs unverändert; Prüfdatenbank, Prüfbenutzer und Overlay wurden entfernt. Beim anschließenden beauftragten Update ändern sich erwartungsgemäß Modulstand und native Laufzeit-/Cachedaten; keine pauschale Datenbankgleichheit behauptet.
 
-Geprüft wurden native Modulabläufe und die exakten Paketdateien. Kein neuer vollständiger GitHub-Updatetest im Shop und kein erneuter Root-Installer-Test in diesem Lauf. Vorherige Nachweise bleiben versionsbezogen. Keine zusätzliche Freigabe für andere Gambio-/PHP-/Theme-Versionen, kein unabhängiges Codeaudit. Der Shop prüft Paketintegrität, weiterhin keine kryptografische Herkunftssignatur. [Maschineller Prüfbericht](test-results.json).
+Zusätzlich bestanden die isolierte PHP-Suite (einschließlich 33 Suchchecks), zwei Builderprüfungen, 79 isolierte Chromium-DOM-/Editorprüfungen und die Syntaxprüfung beider fertigen Installer. [Maschineller Prüfbericht](test-results.json).
+
+Kein erneuter vollständiger GitHub-Update- oder Deinstallationslauf. Historischer Löschtest: [Blog 0.47.2 / KI 0.12.1](https://github.com/c1zz/gambio-blog/blob/v0.47.2-rc.1/docs/KOMPATIBILITAET.md). Keine neuen externen KI-Anbieteraufrufe. Die Suche liest veröffentlichte Fassungen stapelweise; noch kein Suchindex und kein Lasttest. Alternative Suchanbieter wie Findologic, andere Themes und andere Gambio-/PHP-Versionen sind für die Suche ungeprüft. Malibu blendet mobile Live-Vorschläge nativ aus.
+
+Keine pauschale Kompatibilitätszusage und kein unabhängiges Codeaudit. Der Shop prüft Paketintegrität, weiterhin keine kryptografische Herkunftssignatur.
