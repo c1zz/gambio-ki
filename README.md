@@ -4,15 +4,15 @@
 
 Aktuell: c1zz-systems-Logo und einheitlicher Stil für Dropdowns und Eingabefelder. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
-**Testrelease 0.12.6-rc.1 · Modulstand 0.12.6 · separat installierbare Erweiterung**
+**Testrelease 0.12.7-rc.1 · Modulstand 0.12.7 · separat installierbare Erweiterung**
 
 Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambio**. Das KI-Modul verwaltet deine Anbieterzugänge und die aktivierten Bereiche. Der Assistent öffnet sich beim Artikel unter der vorhandenen Blognavigation und nutzt den gesamten Inhaltsbereich.
 
-[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.12.6-rc.1/c1zz-ai-install-0.12.6.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
+[Installer herunterladen](https://github.com/c1zz/gambio-ki/releases/download/v0.12.7-rc.1/c1zz-ai-install-0.12.7.php) · [Prüfsumme](SHA256SUMS) · [Installation](docs/INSTALLATION.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md) · [Teststand](docs/TESTSTAND.md)
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
-Die bisherigen Funktionsansichten wurden am **10.11.2026 mit KI 0.11.1 und Blog 0.46.1** erneuert. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
+Alle sieben Funktionsansichten wurden am **11.11.2026 mit KI 0.12.7 und Blog 0.48.16** neu aufgenommen. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
 
 ## Vertrauen vor Installation
 
@@ -69,7 +69,7 @@ API-Schlüssel werden verschlüsselt gespeichert und später nicht wieder im For
 Voraussetzung ist ein aktiviertes **[c1zz-blog ab 0.45.0](https://github.com/c1zz/gambio-blog)**. Geprüft ist GX26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu. Dieser Teststand ist keine Freigabe für andere Versionen oder Themes.
 
 1. PHP-Installer und Prüfsumme zusammen herunterladen und prüfen.
-2. Nur `c1zz-ai-install-0.12.6.php` in den Shopordner hochladen und im Browser öffnen.
+2. Nur `c1zz-ai-install-0.12.7.php` in den Shopordner hochladen und im Browser öffnen.
 3. Nativ als Admin anmelden und die Installation ausdrücklich starten. Der Installer entfernt sich nach erfolgreichem Abschluss.
 4. Im KI-Modul einen Anbieter verbinden, testen und den Bereich Blog aktivieren.
 5. Im Blog bei **Artikel → Neuer Artikel → KI-Assistent** beginnen.

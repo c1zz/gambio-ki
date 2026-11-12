@@ -10,7 +10,7 @@ Vor Installation oder Update Datenbank, Moduldateien und Blogmedien sichern. Bei
 
 `SHA256SUMS` gehört zum PHP-Installer aus demselben Paket. Mit `sha256sum -c SHA256SUMS` prüfen; alternativ auf macOS `shasum -a 256 -c SHA256SUMS`. Die mitgelieferte Prüfung `python3 tools/verify_release.py` kontrolliert zusätzlich alle 32 eingebetteten Dateien, ohne PHP auszuführen. Eine Prüfsumme allein ist kein unabhängiger Herkunftsnachweis.
 
-Nur `c1zz-ai-install-0.12.6.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
+Nur `c1zz-ai-install-0.12.7.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Der Installer enthält das ZIP bereits. Das übrige Release-Verzeichnis gehört nicht in den Webroot.
 
 Installer im Browser öffnen, nativ als Admin anmelden und den Ablauf starten. Admin- und Modul-Center-Schreibrechte sind erforderlich. Bei Fehlern den betroffenen Schritt prüfen und fortsetzen. Nach erfolgreicher Abschlussprüfung entfernt sich der unveränderte Root-Installer. Spätere Updates starten direkt unter Update / Aktualisieren.
 
@@ -69,3 +69,5 @@ Für den Abruf braucht das Hosting PHP cURL und ZIP, ein privates PHP-Tempverzei
 Blog und KI haben jeweils eine eigene, standardmäßig ausgeschaltete Löschbestätigung. Beim KI-Modul entfernt sie auch gespeicherte Themenvorschläge; beim Blog entfernt sie Bloginhalte und Medien. Beide entfernen ihre Update-Hinweiseinstellungen. Bereits in den Blog übernommene KI-Inhalte gehören zum Blog und werden durch die KI-Löschung erhalten. Ohne Löschhaken gilt weiterhin Datenerhalt, ausgenommen KI-Zugänge.
 
 Auch nach vollständiger Datenlöschung ist die Shopdatenbank nicht bytegleich mit dem Zustand vor der Installation: Native inaktive Modulmarker, Cacheaufbau und fortgeschrittene Zähler bleiben. Modulcode und eigene redaktionelle Shopverknüpfungen werden nicht automatisch entfernt.
+
+Seit Blog **0.48.16** / KI **0.12.7** übernimmt die Update-Seite automatisch gefundene Paketdetails direkt. Eine erneute manuelle Suche ist optional. Die Installation muss weiterhin ausdrücklich gestartet werden.
