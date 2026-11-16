@@ -2,7 +2,7 @@
 
 **0.12.7-rc.1 · Modulstand 0.12.7 · Blog 0.48.16**
 
-Alle Abbildungen wurden am 11.11.2026 neu aufgenommen. Sieben Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Die redaktionellen Beispieltexte und Shopangaben wurden ausschließlich für die Abbildungen in der Browseransicht eingesetzt. Keine gespeicherten Nutzerdaten wurden dadurch geändert. API-Schlüsselfelder sind leer; die Aufnahmen lösten keine KI-Anfragen aus.
+Sieben Ansichten zeigen den Arbeitsablauf im lokalen GX26-Testshop. Anbieterübersicht, Gemini-Einrichtung und Updateverwaltung wurden am **16.11.2026** neu aufgenommen. Die vier redaktionellen Ansichten stammen vom **11.11.2026** und verwenden synthetische Beispieltexte und Anbieterzustände zur Demonstration der Bedienung. Sie belegen keinen Anbieter-Verbindungstest. API-Schlüsselfelder sind leer; für diese Aufnahmen wurden keine KI-Anfragen ausgelöst und keine Nutzerdaten geändert.
 
 ## 1. Bereiche und Anbieter verwalten
 
@@ -12,9 +12,9 @@ Im KI-Modul werden die Zugänge verwaltet und die gewünschten Einsatzbereiche a
 
 ## 2. Gemini verbinden
 
-Schlüsselverwaltung, Ergebnis des Modelllistentests und Hinweise zum kostenlosen Kontingent. Ein erfolgreicher Modelltest ist keine Zusage kostenloser Generierung.
+Die Aufnahme zeigt die Einrichtung vor dem Hinterlegen eines Schlüssels: leeres Eingabefeld und Hinweise zum Kontingent. Ein Verbindungstest wurde in diesem Aufnahmelauf nicht ausgeführt.
 
-[![Google-Gemini-Zugang mit Testergebnis und Kostenhinweis](images/gemini-zugang.png)](images/gemini-zugang.png)
+[![Google-Gemini-Einrichtung mit leerem Schlüsselfeld und Kostenhinweis](images/gemini-zugang.png)](images/gemini-zugang.png)
 
 ## 3. Einen Entwurf vorbereiten
 
@@ -50,6 +50,4 @@ Die Aufnahme **Update / Aktualisieren** zeigt mit KI **0.12.7** die neue Seite n
 
 Alle sieben Aufnahmen zeigen den veröffentlichten Modulstand 0.12.7 zusammen mit Blog 0.48.16. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).
 
-Die temporäre Testumgebung verwendet ausschließlich synthetische Anbieter- und Ideenfixtures zur Darstellung der Bedienung. Der angezeigte Verbindungsstatus ist kein Nachweis eines aktuellen Anbietertests. Es wurden keine echten Schlüssel verwendet und keine KI-Anfragen ausgelöst.
-
-Die Update-Aufnahme zeigt den Fehlerhinweis für GitHub, weil die temporäre Prüfumgebung den Abruf nicht zuließ. Dieser Hinweis ist kein fehlgeschlagenes Modulupdate; eine Installation wurde nicht gestartet.
+Die Update-Aufnahme zeigt eine tatsächlich erfolgreiche GitHub-Versionsabfrage einschließlich Testversionen. Es wurde kein Update installiert. Die drei neuen Aufnahmen wurden auf defekte sichtbare Bilder und Fehlermeldungen geprüft und anschließend einzeln angesehen.

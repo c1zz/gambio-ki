@@ -12,7 +12,7 @@ Neue Themen finden und Blogentwürfe erstellen, direkt in **c1zz-blog für Gambi
 
 ![Gemini im Blogassistenten: Modellwahl, Auftrag und Entwurfserstellung](docs/images/blogentwurf.png)
 
-Alle sieben Funktionsansichten wurden am **11.11.2026 mit KI 0.12.7 und Blog 0.48.16** neu aufgenommen. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
+Die sieben Funktionsansichten zeigen **KI 0.12.7 und Blog 0.48.16**. Anbieterübersicht, Gemini-Einrichtung und Updateverwaltung wurden am **16.11.2026** erneuert; die vier redaktionellen Beispielansichten stammen vom **11.11.2026**. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die Updateverwaltung.
 
 ## Vertrauen vor Installation
 
@@ -78,6 +78,6 @@ Spätere Updates starten direkt unter **Update / Aktualisieren**. Die Erstinstal
 
 Bei der normalen Deinstallation werden Zugänge und aktive Einbindungen entfernt. Blogartikel, Medien und gespeicherte Themenvorschläge bleiben erhalten. Mit der zusätzlichen, standardmäßig ausgeschalteten Löschoption werden auch Themenvorschläge und KI-Update-Einstellungen entfernt. Bereits übernommene Bloginhalte bleiben erhalten. Eine Wiederinstallation benötigt neue Anbieterzugänge. Details und Sicherungshinweise stehen in der [Installationsanleitung](docs/INSTALLATION.md).
 
-Die sechs [Abbildungen](docs/BILDERRUNDGANG.md) zeigen die echte Oberfläche im lokalen Testshop mit beispielhaften redaktionellen Texten. Sie zeigen keine API-Schlüssel und dokumentieren keine zusätzlichen Anbieteraufrufe.
+Die sieben [Abbildungen](docs/BILDERRUNDGANG.md) zeigen die echte Oberfläche im lokalen Testshop mit beispielhaften redaktionellen Texten. Die redaktionellen Ansichten verwenden synthetische Anbieterzustände und belegen keinen aktuellen Verbindungstest. Sie zeigen keine API-Schlüssel und dokumentieren keine zusätzlichen Anbieteraufrufe.
 
 Die Ansicht **Update / Aktualisieren** wurde für Blog 0.47.0 / KI 0.12.0 im frischen GX26-Testshop erneuert. Sie zeigt die abschaltbare automatische Prüfung und die gespeicherte Auswahl für Testversionen.

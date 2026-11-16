@@ -1,24 +1,27 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-16",
   "module": "ki",
   "module_version": "0.12.7",
   "blog_version": "0.48.16",
   "ai_version": "0.12.7",
   "gambio": "26.11.0",
   "theme": "Malibu",
-  "capture": "Native Chromium in fresh disposable GX26 installation of exact release packages; synthetic AI fixtures",
+  "capture": "Native Chromium, exact published packages in disposable GX26 with original shop media; dates and scope per image",
   "saved_content_or_settings_changed": false,
   "provider_requests": 0,
   "update_started": false,
-  "release_installers_changed": true,
+  "release_installers_changed": false,
   "screenshots": [
     {
       "file": "docs/images/aktualisieren.png",
       "module_version": "0.12.7",
-      "sha256": "75333fbdfce4f593d3964167701553d4457850ca69c301ebc4fc116f73f41e22",
+      "sha256": "7225daf915c14c34ccd59be6c4e0bb72b56d12ff12b0a45cfae98a5ef1f44792",
       "width": 1440,
       "height": 1200,
-      "description": "Versionsstatus und Updates direkt im KI-Modul"
+      "description": "Erfolgreiche native GitHub-Versionsabfrage; kein Update gestartet",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/blogbild-browser.png",
@@ -26,7 +29,9 @@
       "sha256": "cadc9a71aba251c42b973de6e3da278e3140ceee986c8337f81754d37ef724da",
       "width": 862,
       "height": 594,
-      "description": "Bildbeschreibung, Stilwahl und Browseranbieter direkt beim Titelbild"
+      "description": "Bildbeschreibung, Stilwahl und Browseranbieter direkt beim Titelbild",
+      "date": "2026-11-11",
+      "scope": "Synthetic demonstration fixture; no provider connection or generation proven by screenshot"
     },
     {
       "file": "docs/images/blogentwurf.png",
@@ -34,15 +39,20 @@
       "sha256": "3f491f1d9fc00a52bd9fce6cd3809cb86c154e0e4bf5dee04e6282e209165802",
       "width": 1440,
       "height": 1200,
-      "description": "KI-Assistent unter der Blognavigation: Modell, Auftrag und neuer Entwurf"
+      "description": "KI-Assistent unter der Blognavigation: Modell, Auftrag und neuer Entwurf",
+      "date": "2026-11-11",
+      "scope": "Synthetic demonstration fixture; no provider connection or generation proven by screenshot"
     },
     {
       "file": "docs/images/gemini-zugang.png",
       "module_version": "0.12.7",
-      "sha256": "1465a5d1a8d5d789252d3beb5563f54bc129998e16084afec5bafcf3bb06d5d2",
+      "sha256": "1479306ca589e7a400188181b11a5a9fbf065cb31c1e2c754368eff20607c197",
       "width": 900,
-      "height": 504,
-      "description": "Gemini: Schlüsselverwaltung, Modelltest und Free-Tier-Hinweis"
+      "height": 414,
+      "description": "Gemini einrichten: leeres Schlüsselfeld und Kostenhinweis, noch kein Verbindungstest",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/gespeicherte-ideen.png",
@@ -50,15 +60,20 @@
       "sha256": "388d985c627418e6456a17397b9441b40d6c9db6d3a001c8bd56d5147183038d",
       "width": 1440,
       "height": 1200,
-      "description": "Gespeicherte Vorschläge mit Übernahme in einen Entwurf"
+      "description": "Gespeicherte Vorschläge mit Übernahme in einen Entwurf",
+      "date": "2026-11-11",
+      "scope": "Synthetic demonstration fixture; no provider connection or generation proven by screenshot"
     },
     {
       "file": "docs/images/ki-zugaenge.png",
       "module_version": "0.12.7",
-      "sha256": "061d51218b6cffa89edcbb170174a889eef35d7631efdfec5edbc98b93a62ad1",
+      "sha256": "aa0f1c3dcad538f062564fc4d6bad8bbe191bcaca49cb2af3dd4255795a01c9a",
       "width": 1440,
       "height": 1200,
-      "description": "KI-Modul: aktive Bereiche und Anbieterzugänge"
+      "description": "KI-Modul: aktive Bereiche und Anbieterzugänge",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/themenquellen.png",
@@ -66,8 +81,10 @@
       "sha256": "863ba6a660b8d3c93e2dec976455f692778bf70725a88ec76f6ca88383421f09",
       "width": 1155,
       "height": 947,
-      "description": "Themenideen: Gemini und bewusst ausgewählte Shop- oder Bloginhalte"
+      "description": "Themenideen: Gemini und bewusst ausgewählte Shop- oder Bloginhalte",
+      "date": "2026-11-11",
+      "scope": "Synthetic demonstration fixture; no provider connection or generation proven by screenshot"
     }
   ],
-  "scope": "Capture phase read-only after preparing disposable example data; update error reflects blocked network in test environment"
+  "scope": "No user shop accessed. Example data prepared before capture; no content/settings saved during capture. Real GitHub version checks; no updates or provider requests. Replaced screenshots checked for broken visible images and visible error alerts."
 }
